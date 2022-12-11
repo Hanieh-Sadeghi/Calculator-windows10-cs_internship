@@ -69,7 +69,7 @@ body {
   min-height: 400px;
 }
 
-.container {
+.container-original {
   width: 100%;
   height: 100%;
 }
@@ -127,14 +127,14 @@ body {
   background: var(--color-container);
 }
 
-.menubar {
+.original-menu-bar{
   height: 7%;
   display: flex;
   justify-content: start;
   align-items: center;
 }
 
-.menubar div {
+.original-menu-bar div {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -142,7 +142,7 @@ body {
   flex-flow: row-reverse nowrap;
 }
 
-.menubar i {
+.original-menu-bar i {
   margin-left: auto;
   height: 20px;
   padding: auto;
@@ -150,7 +150,7 @@ body {
   display: none !important;
 }
 
-.menubar img {
+.original-menu-bar img {
   width: 19px;
   height: 19px;
   margin-left: 1.15%;
@@ -162,7 +162,7 @@ body {
   margin-left: 5px;
 }
 
-.menubar div:hover {
+.original-menu-bar div:hover {
   background-color: var(--color-hover);
 }
 
@@ -213,11 +213,11 @@ body {
   border-radius: var(--radius);
 }
 
-.mline div:hover {
+.activate div:hover {
   background: var(--color-hover);
 }
 
-.mWhite {
+.deactivate-toggle {
   color: var(--color-mc-mr);
 }
 
@@ -226,7 +226,7 @@ body {
   display: none !important;
 }
 
-.calculator {
+.keyboardCalculator{
   background-color: var(--color-container);
   height: 70%;
   display: grid;
@@ -240,7 +240,7 @@ body {
     display: none !important;
   }
 
-  .calculator {
+  .keyboardCalculator {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 2.5px;
@@ -283,7 +283,7 @@ body {
     grid-template-columns: 80% 20%;
   }
 
-  .container {
+  .container-original {
     grid-template-columns: 70% 50%;
   }
 
@@ -308,7 +308,7 @@ body {
     display: none !important;
   }
 
-  .menubar i {
+  .original-menu-bar i {
     display: flex !important;
     width: 40px;
     height: 30px;
@@ -347,7 +347,7 @@ body {
   }
 }
 
-.calculator div {
+.keyboardCalculator div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -355,11 +355,11 @@ body {
   border-radius: var(--radius);
 }
 
-.calculator div:hover {
+.keyboardCalculator div:hover {
   background: var(--color-hover);
 }
 
-.calNumber {
+.number{
   background: var(--clolor-namber);
   font-weight: bold;
 }
