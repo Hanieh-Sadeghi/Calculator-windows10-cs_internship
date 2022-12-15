@@ -213,7 +213,7 @@ body {
   border-radius: var(--radius);
 }
 
-.activate div:hover {
+.activate:hover {
   background: var(--color-hover);
 }
 
