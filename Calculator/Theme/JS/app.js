@@ -28,12 +28,11 @@ numbers.forEach ((buttons) => {
               temp = '';
               sign = signs;
              console.log(number1)
+
      } else if(value== '=') {
           number2 = temp;
           display(number2)
           temp = '';
-          console.log(number1)
-          typeof
           console.log(number2)
           let result = Operation(number1, number2, signs );
           console.log(result)
@@ -53,7 +52,7 @@ function clearDisplay () {
 }
 
 function Operation(firstNumber, secondNumber, operand) {
-     result = ' ' ;
+     result = 0 ;
      // switch (operand){
      //      case '+' :     result = firstNumber + secondNumber  ;  break;
      //      case '-' :      result = firstNumber -  secondNumber ;  break;
