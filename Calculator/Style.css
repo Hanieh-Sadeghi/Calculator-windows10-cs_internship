@@ -189,7 +189,7 @@ body {
 }
 
 .result {
-  height: 15%;
+  height: 10%;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -197,6 +197,17 @@ body {
   font-weight: 600;
   padding-right: 4%;
   padding-top: 4%;
+}
+
+.boxResult {
+  height: 5%;
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 13px 0 0;
+  color: #5a5a5acc;
+  border: 1px solid red;
 }
 
 .mline {

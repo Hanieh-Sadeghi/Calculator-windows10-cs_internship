@@ -3,6 +3,7 @@ let temp = "";
 let number1 = "";
 let number2 = "";
 let sign = "";
+let boxNumbers = document.querySelector(".boxResult");
 const deleteUnit = document.getElementById(".delete");
 const deleteCE = document.getElementById(".CE");
 const deleteAll = document.getElementById(".C");
@@ -69,4 +70,18 @@ function calculate(firstNumber, secondNumber, operand) {
   }
 
   return result;
+}
+
+function syntax(firstNumber, secondNumber,exponent) {
+  switch(exponent){
+  case "√":
+  if(secondNumber==""){
+    boxNumbers= "√("+ boxNumbers + ")"
+    firstNumber = Math.pow(firstNumber , 1/2) 
+   }else{
+    expression = boxNumbers.slice(0, -secondNumber.length)+"√("+ secondNumber + ")";
+    firstResult = firstNumber.replace(secondNumber,Math.pow(secondNumber, 1/2)) 
+  }
+break;
+}
 }
