@@ -5,7 +5,7 @@
   --color-keyboard: #dbdbdbcc;
   --clolor-namber: #eeececa4;
   --color-hover: #bcbcbca0;
-  --color-mc-mr:rgba(111, 111, 111, 0.618);
+  --color-mc-mr: rgba(111, 111, 111, 0.618);
   --font-family: "Noto Sans", sans-serif;
 }
 
@@ -13,10 +13,10 @@
   --color-container: #171313;
   --color-keyboard: #717171ac;
   --clolor-namber: #303030f3;
-  --color-mc-mr:rgb(255, 136, 0);
+  --color-mc-mr: rgb(255, 136, 0);
   --color-hover: #d78100e0;
   --color-font: rgba(255, 255, 255, 0.611);
-  --radius : 500px 100px;
+  --radius: 500px 100px;
   --font-family: 'Solway', serif;
 }
 
@@ -25,9 +25,9 @@
   --color-keyboard: #4fb3f6;
   --clolor-namber: #6fd0f9e5;
   --color-hover: #0058d2;
-  --color-mc-mr:#004f79;
+  --color-mc-mr: #004f79;
   --color-font: #111525;
-  --radius : 40px 0 ;
+  --radius: 40px 0;
   --font-family: Lucida Sans Unicode, 'Lucida Sans';
 }
 
@@ -36,19 +36,19 @@
   --color-keyboard: #6d38f2;
   --clolor-namber: #9a79fdd8;
   --color-hover: #685597;
-  --color-mc-mr:rgb(68, 59, 80);
+  --color-mc-mr: rgb(68, 59, 80);
   --color-font: rgb(46, 30, 70);
-  --radius : 1px 600px;
+  --radius: 1px 600px;
   --font-family: Arial, sans-serif;
 }
 
 :root[data-theme="green"] {
   --color-container: rgba(212, 251, 94, 0.938);
-  --color-keyboard:#79d10e ;
+  --color-keyboard: #79d10e;
   --clolor-namber: #aae740e5;
   --color-hover: #00c24a;
-  --color-mc-mr:rgb(19, 73, 19);
-  --radius : 15px ;
+  --color-mc-mr: rgb(19, 73, 19);
+  --radius: 15px;
   --font-family: ' serif';
 }
 
@@ -58,7 +58,7 @@
   box-sizing: border-box;
   cursor: default;
   overflow: hidden;
-  font-family:var(--font-family);
+  font-family: var(--font-family);
   color: var(--color-font);
 }
 
@@ -127,7 +127,7 @@ body {
   background: var(--color-container);
 }
 
-.original-menu-bar{
+.original-menu-bar {
   height: 7%;
   display: flex;
   justify-content: start;
@@ -189,7 +189,7 @@ body {
 }
 
 .result {
-  height: 10%;
+  height: 10.4%;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -200,7 +200,7 @@ body {
 }
 
 .boxResult {
-  height: 5%;
+  height: 4%;
   display: flex;
   font-size: 25px;
   align-items: center;
@@ -237,7 +237,7 @@ body {
   display: none !important;
 }
 
-.keyboardCalculator{
+.keyboardCalculator {
   background-color: var(--color-container);
   height: 70%;
   display: grid;
@@ -370,7 +370,7 @@ body {
   background: var(--color-hover);
 }
 
-.number{
+.number {
   background: var(--clolor-namber);
   font-weight: bold;
 }
@@ -430,7 +430,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 5px;
-  bottom:5px;
+  bottom: 5px;
   border: none;
   background-color: inherit;
   cursor: pointer;

@@ -31,6 +31,12 @@ numbers.forEach((buttons) => {
       display(temp);
     }
 
+if (){}
+
+
+
+
+
     if (value == "C") {
       display("0");
     } else if (value == "backspace") {
@@ -72,16 +78,25 @@ function calculate(firstNumber, secondNumber, operand) {
   return result;
 }
 
-function syntax(firstNumber, secondNumber,exponent) {
-  switch(exponent){
-  case "√":
-  if(secondNumber==""){
-    boxNumbers= "√("+ boxNumbers + ")"
-    firstNumber = Math.pow(firstNumber , 1/2) 
-   }else{
-    expression = boxNumbers.slice(0, -secondNumber.length)+"√("+ secondNumber + ")";
-    firstResult = firstNumber.replace(secondNumber,Math.pow(secondNumber, 1/2)) 
-  }
-break;
-}
+function exponent_calculate( number,operator) {
+  let result = 0;
+    switch (operator) {
+        case '√': {
+            result = Math.sqrt(number);
+            break;
+        }
+        case "X2": {
+            result = Math.pow(number, 2);
+            break;
+        }
+        case 'X3': {
+            result = Math.pow(number, 3);
+            break;
+        }
+        case "1/X" {
+            result = number = 1 / number;
+            break;
+        }
+    }
+    return result.toStrin
 }
