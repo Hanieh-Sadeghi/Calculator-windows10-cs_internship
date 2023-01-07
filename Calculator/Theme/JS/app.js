@@ -3,6 +3,8 @@ let temp = "";
 let number1 = "";
 let number2 = "";
 let sign = "";
+let result = "";
+let numberValue = document.querySelector("#Zero");
 let boxNumbers = document.querySelector(".boxResult");
 const deleteUnit = document.getElementById(".delete");
 const deleteCE = document.getElementById(".CE");
@@ -12,9 +14,8 @@ numbers.forEach((buttons) => {
   buttons.addEventListener("click", (e) => {
     e.preventDefault();
     let signs = "+-×÷";
-
+    let topSigns =["X2","X3","√","1/X"];
     let value = e.target.getAttribute("value");
-
     if (signs.includes(value)) {
       sign = value;
       value = "";
@@ -26,16 +27,13 @@ numbers.forEach((buttons) => {
       let result = calculate(number1, number2, sign);
       display("");
       display(result);
-    } else {
+    } else if (topSigns.includes(value)) {
+      let currentValue = parseInt(numberValue.innerHTML);
+      display(exponent_calculate(currentValue, value));
+    }else {
       temp = temp + value;
       display(temp);
     }
-
-if (){}
-
-
-
-
 
     if (value == "C") {
       display("0");
@@ -57,7 +55,6 @@ function clearDisplay() {
   display.innerHTML = " ";
 }
 
-let result = "";
 function calculate(firstNumber, secondNumber, operand) {
   result = 0;
   switch (operand) {
@@ -78,25 +75,25 @@ function calculate(firstNumber, secondNumber, operand) {
   return result;
 }
 
-function exponent_calculate( number,operator) {
+function exponent_calculate(number, operator) {
   let result = 0;
-    switch (operator) {
-        case '√': {
-            result = Math.sqrt(number);
-            break;
-        }
-        case "X2": {
-            result = Math.pow(number, 2);
-            break;
-        }
-        case 'X3': {
-            result = Math.pow(number, 3);
-            break;
-        }
-        case "1/X" {
-            result = number = 1 / number;
-            break;
-        }
+  switch (operator) {
+    case "√": {
+      result = Math.sqrt(number);
+      break;
     }
-    return result.toStrin
+    case "X2": {
+      result = Math.pow(number, 2);
+      break;
+    }
+    case "X3": {
+      result = Math.pow(number, 3);
+      break;
+    }
+    case "1/X": {
+      result = number = 1 / number;
+      break;
+    }
+  }
+  return result;
 }
