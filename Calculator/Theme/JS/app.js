@@ -14,7 +14,7 @@ numbers.forEach((buttons) => {
   buttons.addEventListener("click", (e) => {
     e.preventDefault();
     let signs = "+-×÷";
-    let topSigns =["X2","X3","√","1/X"];
+    let topSigns = ["X2", "X3", "√", "1/X"];
     let value = e.target.getAttribute("value");
     if (signs.includes(value)) {
       sign = value;
@@ -30,8 +30,8 @@ numbers.forEach((buttons) => {
     } else if (topSigns.includes(value)) {
       let currentValue = parseInt(numberValue.innerHTML);
       display(exponent_calculate(currentValue, value));
-    }else if (){
-
+    } else if(value == "%"){
+      console.log('haha')
     } else {
       temp = temp + value;
       display(temp);
@@ -40,7 +40,7 @@ numbers.forEach((buttons) => {
     if (value == "C") {
       display("0");
     } else if (value == "backspace") {
-      display( substr ( 0, deleteUnit.length - 1));
+      display(substr(0, deleteUnit.length - 1));
     } else if (value == "CE") {
       display("0");
     }
@@ -100,7 +100,6 @@ function exponent_calculate(number, operator) {
   return result;
 }
 
-function percentage(number, per)
-{
-  return (number/100)*per;
+function percentage(number, per) {
+  return (number / 100) * per;
 }
