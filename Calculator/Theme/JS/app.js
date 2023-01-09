@@ -30,7 +30,9 @@ numbers.forEach((buttons) => {
     } else if (topSigns.includes(value)) {
       let currentValue = parseInt(numberValue.innerHTML);
       display(exponent_calculate(currentValue, value));
-    }else {
+    }else if (){
+
+    } else {
       temp = temp + value;
       display(temp);
     }
@@ -38,7 +40,7 @@ numbers.forEach((buttons) => {
     if (value == "C") {
       display("0");
     } else if (value == "backspace") {
-      display("-1");
+      display( substr ( 0, deleteUnit.length - 1));
     } else if (value == "CE") {
       display("0");
     }
@@ -96,4 +98,9 @@ function exponent_calculate(number, operator) {
     }
   }
   return result;
+}
+
+function percentage(number, per)
+{
+  return (number/100)*per;
 }
