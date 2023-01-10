@@ -10,7 +10,7 @@ const backSpace = document.getElementById(".backSpace");
 const deleteCE = document.getElementById(".CE");
 const deleteAll = document.getElementById(".C");
 
-console.log(deleteUnit)
+
 numbers.forEach((buttons) => {
   buttons.addEventListener("click", (e) => {
     e.preventDefault();
@@ -32,26 +32,27 @@ numbers.forEach((buttons) => {
       let currentValue = parseInt(numberValue.innerHTML);
       display(exponent_calculate(currentValue, value));
     } else if (value == "%") {
-      console.log('haha')
+      // console.log('haha')
     } else {
       temp = temp + value;
       display(temp);
     }
-
+    
     // if (value == "C") {
-    //   display("0");
+      //   display("0");
+      
+      // } else if (value == "backspace") {
+        //   display();
+        
+        // } else if (value == "CE") {
+          //   display("0");
+          // }
+        });
+      });
 
-    // } else if (value == "backspace") {
-    //   display();
-
-    // } else if (value == "CE") {
-    //   display("0");
-    // }
-  });
-});
-
-function clearDisplay(type) {
-  switch (type) {
+  
+      function clearDisplay(type) {
+        switch (type) {
     case "deleteAll":
       number1 = "";
       number2 = "";
@@ -83,10 +84,6 @@ function clearDisplay(type) {
       break;
   }
 }
-
-
-
-
 
 function display(numbers) {
   const display = document.getElementById("Zero");
