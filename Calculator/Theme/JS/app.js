@@ -10,6 +10,7 @@ const deleteUnit = document.getElementById(".delete");
 const deleteCE = document.getElementById(".CE");
 const deleteAll = document.getElementById(".C");
 
+
 numbers.forEach((buttons) => {
   buttons.addEventListener("click", (e) => {
     e.preventDefault();
@@ -39,23 +40,55 @@ numbers.forEach((buttons) => {
 
     if (value == "C") {
       display("0");
+
     } else if (value == "backspace") {
-      display(substr(0, deleteUnit.length - 1));
+      display();
+      
     } else if (value == "CE") {
       display("0");
     }
   });
 });
 
+function clearDisplay(type){
+  switch(type){
+    case "All":
+      firstResult = "";
+      lastResult = "";
+      expression = "";
+      display(0);
+    break;
+
+    case "CE":
+      if(isNaN(firstResult)){
+        firstResult = firstResult.slice(0, -lastResult.length);
+        expression = expression.slice(0, -lastResult.length)
+        
+      }
+      display(0);
+      lastResult = "";
+    break;
+
+
+
+
+
+}
+
+
+
+
+
 function display(numbers) {
   const display = document.getElementById("Zero");
   display.innerHTML = numbers;
 }
 
-function clearDisplay() {
-  const display = document.getElementById(".deleteUnit");
-  display.innerHTML = " ";
-}
+// function clearDisplay() {
+//   const display = document.getElementById(".deleteUnit");
+//   substr(0, deleteUnit.length - 1)
+//   display.innerHTML = " ";
+// }
 
 function calculate(firstNumber, secondNumber, operand) {
   result = 0;
