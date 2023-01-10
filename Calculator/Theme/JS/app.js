@@ -6,11 +6,11 @@ let sign = "";
 let result = "";
 let numberValue = document.querySelector("#Zero");
 let boxNumbers = document.querySelector(".boxResult");
-const deleteUnit = document.getElementById(".delete");
+const backSpace = document.getElementById(".backSpace");
 const deleteCE = document.getElementById(".CE");
 const deleteAll = document.getElementById(".C");
 
-
+console.log(deleteUnit)
 numbers.forEach((buttons) => {
   buttons.addEventListener("click", (e) => {
     e.preventDefault();
@@ -31,48 +31,57 @@ numbers.forEach((buttons) => {
     } else if (topSigns.includes(value)) {
       let currentValue = parseInt(numberValue.innerHTML);
       display(exponent_calculate(currentValue, value));
-    } else if(value == "%"){
+    } else if (value == "%") {
       console.log('haha')
     } else {
       temp = temp + value;
       display(temp);
     }
 
-    if (value == "C") {
-      display("0");
+    // if (value == "C") {
+    //   display("0");
 
-    } else if (value == "backspace") {
-      display();
-      
-    } else if (value == "CE") {
-      display("0");
-    }
+    // } else if (value == "backspace") {
+    //   display();
+
+    // } else if (value == "CE") {
+    //   display("0");
+    // }
   });
 });
 
-function clearDisplay(type){
-  switch(type){
-    case "All":
-      firstResult = "";
-      lastResult = "";
-      expression = "";
+function clearDisplay(type) {
+  switch (type) {
+    case "deleteAll":
+      number1 = "";
+      number2 = "";
+      temp = "";
       display(0);
-    break;
+      break;
 
-    case "CE":
+    case "deleteCE":
       if(isNaN(firstResult)){
-        firstResult = firstResult.slice(0, -lastResult.length);
-        expression = expression.slice(0, -lastResult.length)
+        number1 = number1.slice(0, -number2.length);
+        temp = temp.slice(0, -number2.length)
         
       }
       display(0);
-      lastResult = "";
-    break;
+         number2= "";
+      break;
 
+    case "backSpace":
+      if (number2 != "" || !isNaN(number1)) {
+        number1 = number1.slice(0, -1);
+        temp = temp.slice(0, -1);
+        display(number1)
+        if (isNaN(number1)) {
+          number2 = number2.slice(0, -1)
+          display(number2);
+        }
+      }
 
-
-
-
+      break;
+  }
 }
 
 
@@ -136,3 +145,4 @@ function exponent_calculate(number, operator) {
 function percentage(number, per) {
   return (number / 100) * per;
 }
+
