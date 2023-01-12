@@ -32,27 +32,31 @@ numbers.forEach((buttons) => {
       let currentValue = parseInt(numberValue.innerHTML);
       display(exponent_calculate(currentValue, value));
     } else if (value == "%") {
-      // console.log('haha')
+      let per = 2     
+      let temp2= Number(temp)
+      let result =  percentage(temp2,per);
+      display(result)
+      // console.log(result)
     } else {
       temp = temp + value;
       display(temp);
     }
-    
-    // if (value == "C") {
-      //   display("0");
-      
-      // } else if (value == "backspace") {
-        //   display();
-        
-        // } else if (value == "CE") {
-          //   display("0");
-          // }
-        });
-      });
 
-  
-      function clearDisplay(type) {
-        switch (type) {
+    if (value == "C") {
+      clearDisplay("deleteAll")
+
+    } else if (value == "backspace") {
+      display();
+
+    } else if (value == "CE") {
+      display("0");
+    }
+  });
+});
+
+
+function clearDisplay(type) {
+  switch (type) {
     case "deleteAll":
       number1 = "";
       number2 = "";
@@ -61,13 +65,13 @@ numbers.forEach((buttons) => {
       break;
 
     case "deleteCE":
-      if(isNaN(firstResult)){
+      if (isNaN(firstResult)) {
         number1 = number1.slice(0, -number2.length);
         temp = temp.slice(0, -number2.length)
         
       }
       display(0);
-         number2= "";
+      number2 = "";
       break;
 
     case "backSpace":
@@ -89,12 +93,6 @@ function display(numbers) {
   const display = document.getElementById("Zero");
   display.innerHTML = numbers;
 }
-
-// function clearDisplay() {
-//   const display = document.getElementById(".deleteUnit");
-//   substr(0, deleteUnit.length - 1)
-//   display.innerHTML = " ";
-// }
 
 function calculate(firstNumber, secondNumber, operand) {
   result = 0;
@@ -136,7 +134,7 @@ function exponent_calculate(number, operator) {
       break;
     }
   }
-  return result;
+  return result; 
 }
 
 function percentage(number, per) {
