@@ -32,9 +32,9 @@ numbers.forEach((buttons) => {
       let currentValue = parseInt(numberValue.innerHTML);
       display(exponent_calculate(currentValue, value));
     } else if (value == "%") {
-      let per = 2     
-      let temp2= Number(temp)
-      let result =  percentage(temp2,per);
+      let per = 2
+      let temp2 = Number(temp)
+      let result = percentage(temp2, per);
       display(result)
       // console.log(result)
     } else {
@@ -46,7 +46,8 @@ numbers.forEach((buttons) => {
       clearDisplay("deleteAll")
 
     } else if (value == "backspace") {
-      display();
+      console.log('hanieh')
+      display("backspace");
 
     } else if (value == "CE") {
       display("0");
@@ -68,7 +69,7 @@ function clearDisplay(type) {
       if (isNaN(firstResult)) {
         number1 = number1.slice(0, -number2.length);
         temp = temp.slice(0, -number2.length)
-        
+
       }
       display(0);
       number2 = "";
@@ -134,7 +135,7 @@ function exponent_calculate(number, operator) {
       break;
     }
   }
-  return result; 
+  return result;
 }
 
 function percentage(number, per) {
