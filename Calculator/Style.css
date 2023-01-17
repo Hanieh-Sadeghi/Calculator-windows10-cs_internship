@@ -29,7 +29,7 @@
   --color-font: #111525;
   --radius: 40px 0;
   --font-family: Lucida Sans Unicode, 'Lucida Sans';
-}
+} 
 
 :root[data-theme="purple"] {
   --color-container: #bd95ff;
