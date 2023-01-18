@@ -414,6 +414,7 @@ body {
   font-family: var(--font-family);
   font-size: 120%;
   align-content: center;
+  /* display: none; */
 }
 
 .history {
