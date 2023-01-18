@@ -1,15 +1,17 @@
-const numbers = document.querySelectorAll(".keyboardCalculator");
+import *  as historyModule from './History.js'
+
 let temp = "";
 let number1 = "";
 let number2 = "";
 let sign = "";
 let result = "";
+const numbers = document.querySelectorAll(".keyboardCalculator");
 let numberValue = document.querySelector("#Zero");
 let boxNumbers = document.querySelector(".boxResult");
 const backSpace = document.getElementById(".backSpace");
 const deleteCE = document.getElementById(".CE");
 const deleteAll = document.getElementById(".C");
-
+let historyDiv = document.getElementById("historyLog");
 
 numbers.forEach((buttons) => {
   buttons.addEventListener("click", (e) => {
@@ -28,6 +30,12 @@ numbers.forEach((buttons) => {
       let result = calculate(number1, number2, sign);
       display("");
       display(result);
+      historyModule.addHistory(result);
+      historyDiv.innerHTML = "";
+      for (let i = 0; i < historyModule.HistoryLog.length ; i ++ ){
+        console.log(historyModule.HistoryLog);
+       historyDiv.innerHTML+=historyModule.HistoryLog[i];
+      }
     } else if (topSigns.includes(value)) {
       let currentValue = parseInt(numberValue.innerHTML);
       display(exponent_calculate(currentValue, value));
@@ -54,7 +62,6 @@ numbers.forEach((buttons) => {
     }
   });
 });
-
 
 function clearDisplay(type) {
   switch (type) {
@@ -141,4 +148,3 @@ function exponent_calculate(number, operator) {
 function percentage(number, per) {
   return (number / 100) * per;
 }
-
