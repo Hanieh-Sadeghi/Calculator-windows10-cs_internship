@@ -110,20 +110,22 @@
 
             </div>
 
-            <div class="right">
+            <div id="containerRight">
+                <!-- History -->
+                <section id="history">
+                    <div id="history-memory">
+                        <p id="history-memory-p1" class="history-memory-active">History</p>
+                        <p id="history-memory-p2">Memory</p>
+                    </div>
+                    <div id="history-msg">
+                        <p id="historyLog" class="nohistory hidden">There's no history yet</p>
+                        <ul id="history-msg-list"></ul>
+                    </div>
+                    <button class="material-symbols-outlined"> delete</button>
 
-                <div class="rightheader">
-                    <p class="history">History</p>
-                    <p class="memory">Memory</p>
-                </div>
-                <p id="historyLog" class="nohistory hidden">There's no history yet</p>
-                <ul id="history-msg-list"></ul>
-                <button class="material-symbols-outlined"> delete</button>
-            </div>
-        </div>
-        <script type="module" src="Theme/JS/app.js"></script>
-        <!-- <script src="Theme/JS/History.js"></script> -->
-        <script src="Theme/Theme.js"></script>
+                    <script type="module" src="Theme/JS/app.js"></script>
+                    <!-- <script src="Theme/JS/History.js"></script> -->
+                    <script src="Theme/Theme.js"></script>
 </body>
 
 </html>
