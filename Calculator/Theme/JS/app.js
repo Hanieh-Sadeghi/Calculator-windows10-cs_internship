@@ -32,9 +32,9 @@ numbers.forEach((buttons) => {
       display(result);
       historyModule.addHistory(result);
       historyDiv.innerHTML = "";
-      for (let i = 0; i < historyModule.HistoryLog.length ; i ++ ){
+      for (let i = 0; i < historyModule.HistoryLog.length; i++) {
         console.log(historyModule.HistoryLog);
-       historyDiv.innerHTML+=historyModule.HistoryLog[i];
+        historyDiv.innerHTML += historyModule.HistoryLog[i];
       }
     } else if (topSigns.includes(value)) {
       let currentValue = parseInt(numberValue.innerHTML);
@@ -44,7 +44,6 @@ numbers.forEach((buttons) => {
       let temp2 = Number(temp)
       let result = percentage(temp2, per);
       display(result)
-      // console.log(result)
     } else {
       temp = temp + value;
       display(temp);
