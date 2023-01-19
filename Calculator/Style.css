@@ -29,7 +29,7 @@
   --color-font: #111525;
   --radius: 40px 0;
   --font-family: Lucida Sans Unicode, 'Lucida Sans';
-} 
+}
 
 :root[data-theme="purple"] {
   --color-container: #bd95ff;
@@ -308,10 +308,11 @@ body {
     height: 35px;
   }
 
-  .nohistory {
+  #history {
     font-size: 100% !important;
     font-family: "Noto Sans", sans-serif;
   }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -337,10 +338,6 @@ body {
   .header {
     width: 99.99%;
     grid-template-columns: 75% 25%;
-  }
-
-  .right {
-    display: none;
   }
 
   .burger {
@@ -392,39 +389,77 @@ body {
   font-size: x-large;
 }
 
-.right {
-  background: var(--color-container);
-  padding-left: 10%;
-}
-
-.rightheader {
+#history {
   display: flex;
-  margin-top: 2.5%;
-}
-
-.memory {
-  margin-left: 14%;
-  font-size: 120%;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-container);
   font-family: var(--font-family);
-  font-weight: 100%;
-}
-
-.nohistory {
-  margin-top: 14px;
-  font-family: var(--font-family);
-  font-size: 120%;
-  align-content: center;
-  /* display: none; */
-}
-
-.history {
-  border-bottom: #ee755a solid 2.5px;
-  padding-bottom: 1%;
-  font-size: 120%;
-  font-family: var(--font-family);
-  font-weight: 100%;
-  align-content: center;
   color: var(--color-font);
+}
+
+#history-memory {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 10%;
+}
+
+#history-memory>p {
+  justify-self: center;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px;
+  font-size: 103%;
+  font-family: var(--font-family);
+  color: var(--color-font);
+}
+
+.history-memory-active {
+  padding-bottom: 1%;
+  border-bottom: 2.5px solid rgb(255, 106, 0);
+}
+
+#history-msg {
+  overflow-y: auto;
+  height: 85%;
+  padding: 5px;
+  font-family: var(--font-family);
+  font-size: 96%;
+}
+
+#history-msg-p {
+  font-weight: normal;
+}
+
+#history-msg-list {
+  /* border: 1px solid rebeccapurple; */
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.history-item-expression {
+  border: 1px solid rgb(51, 153, 51);
+  display: flex;
+  font-size: 14px;
+  margin: 12px;
+  font-weight: normal;
+  justify-content: flex-end;
+  color: #8d8d8d;
+}
+
+.history-item-result {
+  border: 1px solid rgb(255, 191, 0);
+  display: flex;
+  margin: 12px;
+  justify-content: flex-end;
+  font-size: 22px;
+}
+
+.history-item-container:hover {
+  background-color: #D3D3D3;
 }
 
 .material-symbols-outlined {
