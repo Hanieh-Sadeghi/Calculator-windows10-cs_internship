@@ -200,14 +200,14 @@ body {
 }
 
 .boxResult {
-  height: 4%;
+  height: 5%;
   display: flex;
-  font-size: 25px;
+  font-size: 28px;
   align-items: center;
   justify-content: flex-end;
-  padding: 10px 13px 0 0;
-  color: #5a5a5acc;
-  border: 1px solid red;
+  padding: 10px 13px 0;
+  color: #575757cc;
+  border: 1px solid rgb(231, 97, 97);
 }
 
 .mline {
@@ -255,9 +255,8 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 2.5px;
-
   }
-
+ 
   .caloperator1 {
     order: -4;
   }
@@ -406,7 +405,7 @@ body {
   height: 10%;
 }
 
-#history-memory>p {
+#history-memory p {
   justify-self: center;
   font-weight: bold;
   padding: 10px;
@@ -429,37 +428,13 @@ body {
   font-size: 96%;
 }
 
-#history-msg-p {
-  font-weight: normal;
-}
-
-#history-msg-list {
-  /* border: 1px solid rebeccapurple; */
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-
-.history-item-expression {
-  border: 1px solid rgb(51, 153, 51);
-  display: flex;
-  font-size: 14px;
-  margin: 12px;
-  font-weight: normal;
-  justify-content: flex-end;
-  color: #8d8d8d;
-}
-
-.history-item-result {
-  border: 1px solid rgb(255, 191, 0);
-  display: flex;
-  margin: 12px;
-  justify-content: flex-end;
-  font-size: 22px;
-}
-
-.history-item-container:hover {
-  background-color: #D3D3D3;
+.historyNumber {
+  border: none;
+  background-color: var(--color-container);
+  font-size: 35px;
+  width: 100%;
+  padding: 5px;
+  display: block;
 }
 
 .material-symbols-outlined {
