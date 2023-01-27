@@ -11,6 +11,8 @@ const backSpace = document.getElementById(".backSpace");
 const deleteCE = document.getElementById(".CE");
 const deleteAll = document.getElementById(".C");
 let historyDiv = document.getElementById("historyLog");
+const trash = document.getElementById('material-symbols-outlined'); 
+
 
 numbers.forEach((buttons) => {
   buttons.addEventListener("click", (e) => {
@@ -52,7 +54,7 @@ numbers.forEach((buttons) => {
       clearDisplay("deleteAll")
 
     } else if (value == "backspace") {
-      console.log('hanieh')
+ 
       display("backspace");
 
     } else if (value == "CE") {
@@ -146,3 +148,8 @@ function exponent_calculate(number, operator) {
 function percentage(number, per) {
   return (number / 100) * per;
 }
+
+trash.addEventListener('click',   (e)=> {
+  e.preventDefault();
+  historyDiv.innerHTML = '';
+  })
