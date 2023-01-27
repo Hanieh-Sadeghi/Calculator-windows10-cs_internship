@@ -1,5 +1,4 @@
 import *  as historyModule from './History.js'
-
 let temp = "";
 let number1 = "";
 let number2 = "";
@@ -34,7 +33,7 @@ numbers.forEach((buttons) => {
       historyDiv.innerHTML = "";
       for (let i = 0; i < historyModule.HistoryLog.length; i++) {
         console.log(historyModule.HistoryLog);
-        historyDiv.innerHTML += historyModule.HistoryLog[i];
+        historyDiv.innerHTML += `<div class="historyNumber"> ${historyModule.HistoryLog[i]}</div>`;
       }
     } else if (topSigns.includes(value)) {
       let currentValue = parseInt(numberValue.innerHTML);
