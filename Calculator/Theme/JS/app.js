@@ -19,7 +19,9 @@ numbers.forEach((buttons) => {
     e.preventDefault();
     let signs = "+-×÷";
     let topSigns = ["X2", "X3", "√", "1/X"];
+    
     let value = e.target.getAttribute("value");
+
     if (signs.includes(value)) {
       sign = value;
       value = "";
@@ -45,7 +47,10 @@ numbers.forEach((buttons) => {
       let temp2 = Number(temp)
       let result = percentage(temp2, per);
       display(result)
-    } else {
+    } else if (value == "backspace") {
+      temp = temp.substring(0, temp.length-1);
+      display(temp);
+    } else  {
       temp = temp + value;
       display(temp);
     }
@@ -53,12 +58,9 @@ numbers.forEach((buttons) => {
     if (value == "C") {
       clearDisplay("deleteAll")
 
-    } else if (value == "backspace") {
- 
-      display("backspace");
-
     } else if (value == "CE") {
       display("0");
+      
     }
   });
 });
@@ -72,29 +74,16 @@ function clearDisplay(type) {
       display(0);
       break;
 
-    case "deleteCE":
-      if (isNaN(firstResult)) {
-        number1 = number1.slice(0, -number2.length);
-        temp = temp.slice(0, -number2.length)
+    // case "deleteCE":
+    //   if (isNaN(firstResult)) {
+    //     number1 = number1.slice(0, -number2.length);
+    //     temp = temp.slice(0, -number2.length)
 
-      }
-      display(0);
-      number2 = "";
-      break;
-
-    case "backSpace":
-      if (number2 != "" || !isNaN(number1)) {
-        number1 = number1.slice(0, -1);
-        temp = temp.slice(0, -1);
-        display(number1)
-        if (isNaN(number1)) {
-          number2 = number2.slice(0, -1)
-          display(number2);
-        }
-      }
-
-      break;
-  }
+    //   }
+    //   display(0);
+    //   number2 = "";
+    //   break;
+}
 }
 
 function display(numbers) {
@@ -147,6 +136,10 @@ function exponent_calculate(number, operator) {
 
 function percentage(number, per) {
   return (number / 100) * per;
+}
+
+function displayBox(){
+
 }
 
 trash.addEventListener('click',   (e)=> {
