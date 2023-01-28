@@ -426,18 +426,18 @@ body {
   border-bottom: 2px solid rgb(255, 106, 0);
 }
 
-#history-msg {
-  overflow-y: auto;
-  height: 85%;
+#history-msg  {
+  overflow: auto ;
+  height: 86%;
   padding: 5px;
   font-family: var(--font-family);
   font-size: 96%;
 }
 
 .historyNumber {
-  border: 2px solid rgb(0, 255, 242);
+  border: 2px solid rgb(43, 255, 0);
   display: flex;
-  height: 70px;
+  height: 80px;
   justify-content: flex-end;
   padding-right: 3%;
   padding-top: 30px;
