@@ -71,12 +71,12 @@ body {
 
 .container-original {
   width: 100%;
-  height: 100%;
+  height: 102%;
 }
 
 .header {
   display: grid;
-  height: 6%;
+  height: 40px;
   grid-template-columns: 91% 9%;
   background: var(--color-container);
 }
