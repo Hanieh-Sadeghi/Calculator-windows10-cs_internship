@@ -168,13 +168,13 @@ body {
 }
 
 .burger {
-  padding: 0.5% 0.5%;
-  width: 3.5%;
+  padding: 7px;
+  border-radius: var(--radius);
 }
 
 .burger img {
-  width: 90%;
-  height: 95%;
+  width: 25px;
+  height: 25px;
 }
 
 .standard {
@@ -286,10 +286,10 @@ body {
     order: -3;
   }
 
-  .burger {
+  /* .burger {
     height: 30px;
     width: 35px;
-  }
+  } */
 
   .mline {
     height: 8%;
@@ -311,10 +311,10 @@ body {
     width: 80%;
   }
 
-  .burger {
+  /* .burger {
     width: 35px;
     height: 35px;
-  }
+  } */
 
   #history {
     font-size: 100% !important;
@@ -342,10 +342,10 @@ body {
     width: 145%;
   }
 
-  .burger {
+  /* .burger {
     width: 30px;
     height: 30px;
-  }
+  } */
 
   .main img {
     margin-left: 3%;
