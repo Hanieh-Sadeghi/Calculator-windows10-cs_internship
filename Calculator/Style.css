@@ -56,8 +56,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  cursor: default;
   overflow: hidden;
+  cursor: default;
   font-family: var(--font-family);
   color: var(--color-font);
 }
@@ -82,7 +82,6 @@ body {
 }
 
 .header div {
-  /* border: 1px solid rgb(255, 0, 149); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -126,7 +125,6 @@ body {
 }
 
 .original-menu-bar {
-  border: 1px solid rgb(251, 255, 0);
   height: 7%;
   display: flex;
   justify-content: start;
@@ -188,7 +186,7 @@ body {
 }
 
 .result {
-  border: 1px solid rgb(110, 225, 65);
+  border: 1px solid rgb(118, 141, 0);
   height: 100px;
   display: flex;
   align-items: center;
@@ -196,18 +194,29 @@ body {
   font-size: 350%;
   font-weight: 600;
   padding-right: 20px;
-
 }
 
 .boxResult {
-  padding: 10px;
-  height: 30px;
   display: flex;
+  height: 30px;
+  padding: 10px;
   font-size: 24px;
-  justify-content: flex-end;
   align-items: center;
-  color: slateblue;
-  border: 1px solid rgb(231, 97, 97);
+  padding-right: 20px;
+  justify-content: flex-end;
+  color: rgb(136, 136, 136);
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.historyNumber {
+  border: 2px solid rgb(43, 255, 0);
+  display: flex;
+  height: 80px;
+  color: rgb(141, 141, 141);
+  justify-content: flex-end;
+  padding-right: 28px;
+  padding-top: 37px;
+  font-size: 30px;
 }
 
 .mline {
@@ -253,7 +262,7 @@ body {
 
   .header {
     grid-template-columns: 85% 15%;
-  } 
+  }
 
   .keyboardCalculator {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -315,7 +324,6 @@ body {
     font-size: 100% !important;
     font-family: "Noto Sans", sans-serif;
   }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -426,22 +434,12 @@ body {
   border-bottom: 2px solid rgb(255, 106, 0);
 }
 
-#history-msg  {
-  overflow: auto ;
+#history-msg {
+  overflow: auto;
   height: 86%;
   padding: 5px;
   font-family: var(--font-family);
   font-size: 96%;
-}
-
-.historyNumber {
-  border: 2px solid rgb(43, 255, 0);
-  display: flex;
-  height: 80px;
-  justify-content: flex-end;
-  padding-right: 3%;
-  padding-top: 30px;
-  font-size: 20px;
 }
 
 .material-symbols-outlined {
