@@ -121,12 +121,15 @@ body {
   grid-template-columns: 69% minmax(31%, 320px);
 }
 
-.left {
+.containerleft {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
   background: var(--color-container);
 }
 
 .original-menu-bar {
-  height: 7%;
+  height: 65px;
   display: flex;
   justify-content: start;
   align-items: center;
