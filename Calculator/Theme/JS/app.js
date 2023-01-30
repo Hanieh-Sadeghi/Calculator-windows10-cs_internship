@@ -5,13 +5,11 @@ let number2 = "";
 let sign = "";
 let result = "";
 const numbers = document.querySelectorAll(".keyboardCalculator");
-let numberValue = document.querySelector("#Zero");
-let boxNumbers = document.querySelector(".boxResult");
 const backSpace = document.getElementById(".backSpace");
 const deleteCE = document.getElementById(".CE");
 const deleteAll = document.getElementById(".C");
 let historyDiv = document.getElementById("historyLog");
-const trash = document.getElementById('material-symbols-outlined'); 
+const trash = document.getElementById('material-symbols-outlined');
 
 
 numbers.forEach((buttons) => {
@@ -19,7 +17,7 @@ numbers.forEach((buttons) => {
     e.preventDefault();
     let signs = "+-×÷";
     let topSigns = ["X2", "X3", "√", "1/X"];
-    
+
     let value = e.target.getAttribute("value");
 
     if (signs.includes(value)) {
@@ -48,9 +46,13 @@ numbers.forEach((buttons) => {
       let result = percentage(temp2, per);
       display(result)
     } else if (value == "backspace") {
-      temp = temp.substring(0, temp.length-1);
-      display(temp);
-    } else  {
+      temp = temp.substring(0, temp.length - 1);
+      if (temp == "") {
+        display(0)
+      } else {
+        display(temp);
+      }
+    } else {
       temp = temp + value;
       display(temp);
     }
@@ -60,7 +62,7 @@ numbers.forEach((buttons) => {
 
     } else if (value == "CE") {
       display("0");
-      
+
     }
   });
 });
@@ -78,17 +80,21 @@ function clearDisplay(type) {
     //   if (isNaN(firstResult)) {
     //     number1 = number1.slice(0, -number2.length);
     //     temp = temp.slice(0, -number2.length)
-
     //   }
     //   display(0);
     //   number2 = "";
     //   break;
-}
+  }
 }
 
 function display(numbers) {
   const display = document.getElementById("Zero");
   display.innerHTML = numbers;
+}
+
+function displayTempBox(numbers, signs) {
+  let displayBox = `${numbers} ${signs}`;
+  displayBox.innerHTML = `${numbers} ${signs}`;
 }
 
 function calculate(firstNumber, secondNumber, operand) {
@@ -138,11 +144,7 @@ function percentage(number, per) {
   return (number / 100) * per;
 }
 
-function displayBox(){
-
-}
-
-trash.addEventListener('click',   (e)=> {
+trash.addEventListener('click', (e) => {
   e.preventDefault();
   historyDiv.innerHTML = '';
-  })
+})
