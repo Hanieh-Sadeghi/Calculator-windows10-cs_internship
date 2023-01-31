@@ -61,8 +61,11 @@ numbers.forEach((buttons) => {
     }
     if (value == 'C') {
       clearDisplay('deleteAll');
-    } else if (value == 'CE') {
-      display('0');
+      clearTempBox();
+    } 
+    else if (value == 'CE') {
+      clearDisplay('deleteCE');
+      // clearTempBox();
     }
   });
 });
@@ -76,15 +79,17 @@ function clearDisplay(type) {
       display(0);
       break;
 
-    // case "deleteCE":
-    //   if (isNaN(firstResult)) {
-    //     number1 = number1.slice(0, -number2.length);
-    //     temp = temp.slice(0, -number2.length)
-    //   }
-    //   display(0);
-    //   number2 = "";
-    //   break;
+    case "deleteCE":
+      display(0);
+      temp = '';
+      console.log(temp)
+      number2 = "";
+      break;
   }
+}
+
+function clearTempBox() {
+  boxResult.innerHTML = '';
 }
 
 function display(numbers) {
@@ -106,7 +111,6 @@ function displayTempBox() {
     }
   }
 }
-
 
 function calculate(firstNumber, secondNumber, operand) {
   result = 0;
