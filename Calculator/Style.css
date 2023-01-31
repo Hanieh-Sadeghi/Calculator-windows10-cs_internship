@@ -10,12 +10,12 @@
 }
 
 :root[data-theme="black"] {
-  --color-container: #171313;
+  --color-container: #121212;
   --color-keyboard: #717171ac;
   --clolor-namber: #303030f3;
-  --color-mc-mr: rgb(255, 136, 0);
-  --color-hover: #d78100e0;
-  --color-font: rgba(255, 255, 255, 0.611);
+  --color-mc-mr: order;
+  --color-hover: #ff9900f9;
+  --color-font: rgba(255, 255, 255, 0.807);
   --radius: 500px 100px;
   --font-family: 'Solway', serif;
 }
@@ -190,7 +190,7 @@ body {
 }
 
 .result {
-  border: 1px solid rgb(118, 141, 0);
+  /* border: 1px solid rgb(118, 141, 0); */
   height: 100px;
   display: flex;
   align-items: center;
@@ -209,17 +209,17 @@ body {
   padding-right: 20px;
   justify-content: flex-end;
   color: rgb(136, 136, 136);
-  border: 1px solid rgb(255, 0, 0);
+  /* border: 1px solid rgb(255, 0, 0); */
 }
 
 .historyNumber {
-  border: 2px solid rgb(43, 255, 0);
+  /* border: 2px solid rgb(43, 255, 0); */
+  height: 85px;
   display: flex;
-  height: 80px;
-  color: rgb(141, 141, 141);
   justify-content: flex-end;
+  color: rgb(141, 141, 141);
   padding-right: 28px;
-  padding-top: 37px;
+  padding-top: 38px;
   font-size: 30px;
 }
 
@@ -310,11 +310,6 @@ body {
     height: 8%;
     width: 80%;
   }
-
-  /* .burger {
-    width: 35px;
-    height: 35px;
-  } */
 
   #history {
     font-size: 100% !important;
