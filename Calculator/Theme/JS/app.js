@@ -1,4 +1,5 @@
 import *  as historyModule from './History.js'
+
 let temp = "";
 let number1 = "";
 let number2 = "";
@@ -25,6 +26,7 @@ numbers.forEach((buttons) => {
       number1 = Number(temp);
       temp = "";
       displayTempBox(number1, sign);
+      historyModule.historyTempBox(number1, sign);
     } else if (value == '=') {
       number2 = Number(temp);
       temp = "";
@@ -38,16 +40,19 @@ numbers.forEach((buttons) => {
         historyDiv.innerHTML += `<div class="historyNumber"> ${historyModule.HistoryLog[i]}</div>`;
       }
       displayTempBox(number1, sign, number2, value);
+      historyModule.historyTempBox(number1, sign, number2, value);
     } else if (topSigns.includes(value)) {
       let currentValue = parseInt(numberValue.innerHTML);
       display(exponent_calculate(currentValue, value));
-      displayTempBox(currentValue, value);
+      historyModule.historyTempBox(currentValue, value);
     } else if (value == '%') {
       let per = 2
       let temp2 = Number(temp)
       let result = percentage(temp2, per);
       display(result)
       displayTempBox(temp2, value);
+      historyModule.historyTempBox(temp2, value);
+
     } else if (value == 'backspace') {
       temp = temp.substring(0, temp.length - 1);
       if (temp == "") {
@@ -56,13 +61,14 @@ numbers.forEach((buttons) => {
         display(temp);
       }
     } else {
+      if (value === '.' && temp.includes('.')) return;
       temp = temp + value;
       display(temp);
     }
     if (value == 'C') {
       clearDisplay('deleteAll');
       clearTempBox();
-    } 
+    }
     else if (value == 'CE') {
       clearDisplay('deleteCE');
       // clearTempBox();
