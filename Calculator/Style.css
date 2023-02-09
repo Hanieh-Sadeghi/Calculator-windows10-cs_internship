@@ -217,10 +217,20 @@ body {
   height: 85px;
   display: flex;
   justify-content: flex-end;
-  color: rgb(141, 141, 141);
+  color: rgb(0, 0, 0);
   padding-right: 28px;
   padding-top: 38px;
   font-size: 30px;
+}
+
+.historyTemp{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 4%;
+  font-size: 200;
+  color: rgb(136, 136, 136);
+  padding-right: 20px;  
 }
 
 .mline {
@@ -286,11 +296,6 @@ body {
     order: -3;
   }
 
-  /* .burger {
-    height: 30px;
-    width: 35px;
-  } */
-
   .mline {
     height: 8%;
     width: 70%;
@@ -336,11 +341,6 @@ body {
   .main {
     width: 145%;
   }
-
-  /* .burger {
-    width: 30px;
-    height: 30px;
-  } */
 
   .main img {
     margin-left: 3%;
