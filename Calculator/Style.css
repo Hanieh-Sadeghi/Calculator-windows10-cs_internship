@@ -213,24 +213,23 @@ body {
 }
 
 .historyNumber {
-  /* border: 2px solid rgb(43, 255, 0); */
-  height: 85px;
   display: flex;
   justify-content: flex-end;
   color: rgb(0, 0, 0);
   padding-right: 28px;
-  padding-top: 38px;
-  font-size: 30px;
+  padding-top: 9px;
+  font-size: 35px;
 }
 
 .historyTemp{
+  /* border: 2px solid rgb(255, 0, 0); */
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 4%;
   font-size: 200;
   color: rgb(136, 136, 136);
-  padding-right: 20px;  
+  padding-right: 20px; 
+  font-size: 23px; 
 }
 
 .mline {
