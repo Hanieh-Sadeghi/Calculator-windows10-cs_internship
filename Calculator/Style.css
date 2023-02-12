@@ -215,11 +215,12 @@ body {
 .historyNumber {
   display: flex;
   justify-content: flex-end;
-  color: rgb(0, 0, 0);
+  color: var(--color-font);
   padding-right: 28px;
   padding-top: 9px;
   font-size: 35px;
 }
+
 
 .historyTemp{
   /* border: 2px solid rgb(255, 0, 0); */
