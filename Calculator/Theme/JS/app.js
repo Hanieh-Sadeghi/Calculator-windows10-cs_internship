@@ -1,5 +1,5 @@
 import *  as historyModule from './History.js'
-import * as  memoryModule from './Memory.js'
+// import * as  memoryModule from './Memory.js'
 
 let temp = '';
 let number1 = '';
