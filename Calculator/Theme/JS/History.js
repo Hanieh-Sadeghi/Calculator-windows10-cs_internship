@@ -1,6 +1,4 @@
 const history = document.getElementById('history-1'); //History
-const memory = document.getElementById('memory-p2');//Memory
-const list = document.getElementById('history-msg'); //list history&&Memory
 let historyNumber = document.getElementsByClassName('historyNumber');
 
 export let HistoryLog = [];
