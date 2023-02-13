@@ -270,6 +270,10 @@ body {
   gap: 2.5px;
 }
 
+/* .containerMemory{
+ display: none !important;
+} */
+
 @media screen and (max-width: 1024px) {
   .xhaide {
     display: none !important;
@@ -355,6 +359,17 @@ body {
   .material-symbols-outlined {
     display: none !important;
   }
+
+  .containerMemory{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 612px;
+    background-color: var(--color-container);
+    border: 1px solid rgb(255, 0, 0);
+  }
 }
 
 .keyboardCalculator div {
@@ -428,6 +443,22 @@ body {
   padding: 5px;
   font-family: var(--font-family);
   font-size: 96%;
+}
+
+.active-history{
+  display: block;
+}
+
+.deactivate-history{
+  display: none;
+}
+
+.deactivate-memory{
+  display: none;
+}
+
+.active-memory{
+  display: block;
 }
 
 .material-symbols-outlined {
