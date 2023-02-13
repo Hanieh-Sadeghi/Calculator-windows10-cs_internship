@@ -1,5 +1,5 @@
-import *  as historyModule from './History.js'
-// import * as  memoryModule from './Memory.js'
+import *  as historyModule from './History.js';
+import * as  memoryModule from './Memory.js';
 
 let temp = '';
 let number1 = '';
@@ -13,9 +13,14 @@ const numbers = document.querySelectorAll('.keyboardCalculator');
 const deleteCE = document.getElementById('.CE');
 const deleteAll = document.getElementById('.C');
 const trash = document.getElementById('material-symbols-outlined');
+const history = document.getElementById('history-1'); //History
+const memory = document.getElementById('memory-p2');//Memory
+const listHistory = document.getElementById('history-msg'); //list history&&
+const listMemory = document.getElementById('memory-msg'); //Memory
 let numberList = [];
 let signList = [];
 let historyLog = [];
+
 
 numbers.forEach((buttons) => {
   buttons.addEventListener('click', (e) => {
@@ -80,7 +85,7 @@ numbers.forEach((buttons) => {
       negative(Number(numberValue.innerHTML));
       display(numberValue.innerHTML);
     } else {
-      if (value === '.' && temp.includes('.')) return;
+      if (value === '.' && temp.includes('.')) return; 
       temp = temp + value;
       display(temp);
     }
@@ -95,6 +100,21 @@ numbers.forEach((buttons) => {
     }
   });
 });
+
+history.addEventListener('click', () => {
+  listHistory.classList.add('active-history');
+  listHistory.classList.remove('deactivate-history');
+  listMemory.classList.remove('active-memory');
+  listMemory.classList.add('deactivate-memory');
+});
+ 
+memory.addEventListener('click', () => {
+  listMemory.classList.add('active-memory');
+  listMemory.classList.remove('deactivate-memory');
+  listHistory.classList.remove('active-history');
+  listHistory.classList.add('deactivate-history');
+});
+
 
 function clearDisplay(type) {
   switch (type) {
