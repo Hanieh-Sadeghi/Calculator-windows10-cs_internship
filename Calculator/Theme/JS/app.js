@@ -26,7 +26,7 @@ numbers.forEach((buttons) => {
   buttons.addEventListener('click', (e) => {
     e.preventDefault();
     let signs = '+-×÷';
-    let topSigns = ['X2', 'X3', '√', '1/X'];
+    let topSigns = ['sqr', 'X3', '√', '1/X'];
     let value = e.target.getAttribute('value');
     let changeSign = '+/-';
 
@@ -180,7 +180,7 @@ function exponent_calculate(number, operator) {
       result = Math.sqrt(number);
       break;
     }
-    case 'X2': {
+    case 'sqr': {
       result = Math.pow(number, 2);
       break;
     }
