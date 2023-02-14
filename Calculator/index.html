@@ -62,13 +62,12 @@
                     <div class="activate" value="M+">M+</div>
                     <div class="activate" value="M-">M-</div>
                     <div class="activate" value="MS">MS</div>
-                    <div class="m3">M<img
+                    <div class="m3 " value="M">M<img
                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAbUlEQVQYlaWOMQqFMBBEn5JN9ZscaW9gLR7OA9j9yioX2DbXSGUhZAubzycg2DgwzTyYGXirASDn/AkhSA/cvanqMQKIyArU3r+MESClNAPfrmBvrS3/CYBSSqy1bkB090lVz9shMxMzkxt40gUoAiI1vvmaBwAAAABJRU5ErkJggg==">
                     </div>
-                    
                 </div>
                 
-                <div class="containerMemory"></div>  <!-- Memory size 500 px--> 
+                <div id="containerMemory"></div>  <!-- Memory size 500 px--> 
                 <div class="keyboardCalculator">
                     <div id="Percent" class="caloperator1" value="%"> % </div>
                     <div id="CE" class="caloperator" value="CE"> CE </div>
@@ -88,7 +87,7 @@
                     <div id="ninth" class="number" value="9"> 9 </div>
                     <div id="multiplication" class="caloperator" value="×"> ×</div>
                     
-                    <div id="X2" class="caloperator3" value="X2"> &#120013&#178 </div>
+                    <div id="sqr" class="caloperator3" value="sqr"> &#120013&#178 </div>
                     <div id="four" class="number" value="4"> 4 </div>
                     <div id="five" class="number" value="5"> 5 </div>
                     
@@ -126,7 +125,11 @@
 
                     <div id="memory-msg" class="deactivate-memory">
                         <p id="memoryLog" class="nomemory hidden">There's no Memory yet</p>
-                        <!-- <div class="historyNumber"></div> -->
+                        <div class="memoryNumber"> 
+                            <spn >mc </spn>
+                            <spn>m+</spn>
+                            <spn>m-</spn>
+                        </div>
                         <button id="material-symbols-outlined" class="material-symbols-outlined"> delete</button>
                     </div>
 
