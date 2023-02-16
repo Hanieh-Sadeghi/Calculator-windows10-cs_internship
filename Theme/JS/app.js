@@ -26,15 +26,15 @@ numbers.forEach((buttons) => {
   buttons.addEventListener('click', (e) => {
     e.preventDefault();
     let signs = ' + - × ÷ ';
-    let topSigns = [ 'sqr' , 'X3' , '√' , '1/X' ];
+    let topSigns = ['sqr', 'cube', '√', '1/'];
     let value = e.target.getAttribute('value');
-    let changeSign = '+/-' ;
+    let changeSign = '+/-';
 
     if (signs.includes(value)) {
       sign = value;
-      value = ' ' ;
+      value = ' ';
       number1 = Number(temp);
-      temp = ' ' ;
+      temp = ' ';
       numberList.push(number1);
       signList.push(sign);
       displayTempBox();
@@ -85,8 +85,8 @@ numbers.forEach((buttons) => {
       negative(Number(numberValue.innerHTML));
       display(numberValue.innerHTML);
     } else {
-      if (value === '.' && temp.includes('.')) return; 
-      temp = temp  +  value;
+      if (value === '.' && temp.includes('.')) return;
+      temp = temp + value;
       display(temp);
     }
 
@@ -107,7 +107,7 @@ history.addEventListener('click', () => {
   listMemory.classList.remove('active-memory');
   listMemory.classList.add('deactivate-memory');
 });
- 
+
 memory.addEventListener('click', () => {
   listMemory.classList.add('active-memory');
   listMemory.classList.remove('deactivate-memory');
@@ -119,9 +119,9 @@ memory.addEventListener('click', () => {
 function clearDisplay(type) {
   switch (type) {
     case 'deleteAll':
-      number1 = ' ' ;
-      number2 = ' ' ;
-      temp = ' ' ;
+      number1 = ' ';
+      number2 = ' ';
+      temp = ' ';
       display(0);
       break;
 
@@ -144,9 +144,9 @@ function display(numbers) {
 }
 
 function displayTempBox() {
-  let displayBox = '';
+  let displayBox = ' ';
   for (let i = 0; i < numberList.length; i++) {
-    displayBox += `${numberList[i]} ${signList[i]}`;
+    displayBox += `${numberList[i]}  ${signList[i]}`;
   }
   boxResult.innerHTML = displayBox;
 }
@@ -157,16 +157,16 @@ function calculate() {
     let currentSign = signList[i];
     switch (currentSign) {
       case '+':
-        result += numberList [ i  + 1];
+        result += numberList[i + 1];
         break;
       case '-':
-        result -= numberList [ i  + 1];
+        result -= numberList[i + 1];
         break;
       case '×':
-        result *= numberList [ i  + 1];
+        result *= numberList[i + 1];
         break;
       case '÷':
-        result /= numberList [ i  + 1];
+        result /= numberList[i + 1];
         break;
     }
   }
@@ -181,14 +181,14 @@ function exponent_calculate(number, operator) {
       break;
     }
     case 'sqr': {
-      result = Math.pow(number , 2);
+      result = Math.pow(number, 2);
       break;
     }
-    case 'X3': {
-      result = Math.pow(number , 3);
+    case 'cube': {
+      result = Math.pow(number, 3);
       break;
     }
-    case '1/X': {
+    case '1/': {
       result = number = 1 / number;
       break;
     }
