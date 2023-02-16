@@ -205,7 +205,7 @@ body {
   display: flex;
   height: 30px;
   padding: 10px;
-  font-size: 24px;
+  font-size: 18px;
   align-items: center;
   padding-right: 20px;
   justify-content: flex-end;
@@ -339,10 +339,9 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 200;
   color: rgb(136, 136, 136);
   padding-right: 20px;
-  font-size: 23px;
+  font-size: 17px;
 }
 
 .historyNumber {
@@ -351,7 +350,7 @@ body {
   color: var(--color-font);
   padding-right: 28px;
   padding-top: 9px;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .active-history {
