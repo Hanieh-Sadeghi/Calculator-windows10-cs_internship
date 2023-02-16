@@ -66,7 +66,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  min-height: 500px;
+  min-width:500px;
   background-color: var(--color-container);
 }
 
@@ -117,9 +117,10 @@ body {
 }
 
 .main {
-  height: 95.4%;
+  /* border: 1px solid red; */
   display: grid;
-  grid-template-columns: 70% minmax(30%, 320px);
+  height: 95%;
+  grid-template-columns: 69% minmax(29%, 320px);
 }
 
 .containerleft {
@@ -243,7 +244,7 @@ body {
   grid-template-columns: repeat(5, auto);
   grid-template-rows: repeat(5, auto);
   width: 100%;
-  height: 75%;
+  height: 80%;
   gap: 2.5px;
 }
 
@@ -262,14 +263,15 @@ body {
 #containerMemory {
   display: flex;
   visibility: hidden;
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   z-index: 1;
   bottom: 0;
-  left: 0;
   width: 100%;
-  height: 627px;
+  height: 69%;
   background-color: var(--color-container);
-  border: 2px solid var(--color-hover);
+  border: 5px solid rgb(255, 102, 0);
+  border-radius: 10px;
 }
 
 .number {
@@ -371,7 +373,7 @@ body {
 .memoryNumber {
   border: 1px solid rgb(247, 39, 7);
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 15px;
   height: 90px;
@@ -393,7 +395,7 @@ body {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1054px) {
   .xhaide {
     display: none !important;
   }
@@ -422,11 +424,11 @@ body {
 
   .mline {
     height: 8%;
-    width: 70%;
+    width: 80%;
   }
 }
 
-@media screen and (max-width: 720px) {
+@media  screen and (max-width: 720px) {
   .xhaide {
     display: none !important;
   }
@@ -437,7 +439,7 @@ body {
 
   .mline {
     height: 8%;
-    width: 80%;
+    width: 90%;
   }
 
   #history {
@@ -493,4 +495,23 @@ body {
 
 .caloperator4 {
   background-color: var(--color-keyboard);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-container);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: #62626294;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-hover);
 }

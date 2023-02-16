@@ -1,5 +1,5 @@
 import *  as historyModule from './History.js';
-import * as  memoryModule from './Memory.js';
+import * as memoryModule from './Memory.js';
 
 let temp = '';
 let number1 = '';
@@ -25,16 +25,16 @@ let historyLog = [];
 numbers.forEach((buttons) => {
   buttons.addEventListener('click', (e) => {
     e.preventDefault();
-    let signs = '+-×÷';
-    let topSigns = ['sqr', 'X3', '√', '1/X'];
+    let signs = ' + - × ÷ ';
+    let topSigns = [ 'sqr' , 'X3' , '√' , '1/X' ];
     let value = e.target.getAttribute('value');
-    let changeSign = '+/-';
+    let changeSign = '+/-' ;
 
     if (signs.includes(value)) {
       sign = value;
-      value = '';
+      value = ' ' ;
       number1 = Number(temp);
-      temp = '';
+      temp = ' ' ;
       numberList.push(number1);
       signList.push(sign);
       displayTempBox();
@@ -49,10 +49,10 @@ numbers.forEach((buttons) => {
       display(result);
       displayTempBox();
       historyModule.addHistory(result);
-      historyDiv.innerHTML = '';
+      historyDiv.innerHTML = ' ';
       historyLog.push(boxResult.innerHTML);
       for (let i = 0; i < historyModule.HistoryLog.length; i++) {
-        historyDiv.innerHTML += `<div class='historyTemp'>${historyLog[i]}</div> <div class='historyNumber'> ${historyModule.HistoryLog[i]}</div>`;
+        historyDiv.innerHTML += `<div class='historyTemp'> ${historyLog[i]} </div> <div class='historyNumber'> ${historyModule.HistoryLog[i]} </div>`;
       }
       numberList = [];
       signList = [];
@@ -76,7 +76,7 @@ numbers.forEach((buttons) => {
 
     } else if (value == 'backspace') {
       temp = temp.substring(0, temp.length - 1);
-      if (temp == '') {
+      if (temp == ' ') {
         display(0)
       } else {
         display(temp);
@@ -86,7 +86,7 @@ numbers.forEach((buttons) => {
       display(numberValue.innerHTML);
     } else {
       if (value === '.' && temp.includes('.')) return; 
-      temp = temp + value;
+      temp = temp  +  value;
       display(temp);
     }
 
@@ -119,17 +119,17 @@ memory.addEventListener('click', () => {
 function clearDisplay(type) {
   switch (type) {
     case 'deleteAll':
-      number1 = '';
-      number2 = '';
-      temp = '';
+      number1 = ' ' ;
+      number2 = ' ' ;
+      temp = ' ' ;
       display(0);
       break;
 
     case 'deleteCE':
       display(0);
-      temp = '';
+      temp = ' ';
       console.log(temp)
-      number2 = '';
+      number2 = ' ';
       break;
   }
 }
@@ -157,16 +157,16 @@ function calculate() {
     let currentSign = signList[i];
     switch (currentSign) {
       case '+':
-        result += numberList[i + 1];
+        result += numberList [ i  + 1];
         break;
       case '-':
-        result -= numberList[i + 1];
+        result -= numberList [ i  + 1];
         break;
       case '×':
-        result *= numberList[i + 1];
+        result *= numberList [ i  + 1];
         break;
       case '÷':
-        result /= numberList[i + 1];
+        result /= numberList [ i  + 1];
         break;
     }
   }
@@ -181,11 +181,11 @@ function exponent_calculate(number, operator) {
       break;
     }
     case 'sqr': {
-      result = Math.pow(number, 2);
+      result = Math.pow(number , 2);
       break;
     }
     case 'X3': {
-      result = Math.pow(number, 3);
+      result = Math.pow(number , 3);
       break;
     }
     case '1/X': {

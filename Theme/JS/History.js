@@ -9,6 +9,6 @@ export function addHistory(result) {
 export function historyTempBox() {
  let historyBox = '';
   for (let i = 0; i < historyBox.length; i++) {
-    historyBox += `${numberList[i]} ${signList[i]} `;
+    historyBox += ` ${numberList [i]}  ${signList [i]} `;
   }
 }
