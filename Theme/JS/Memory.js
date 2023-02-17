@@ -50,7 +50,7 @@ mlineBtn.addEventListener('click', (e) => {
     }
     else if (e.target.getAttribute('value') == 'MS') {
         memoryList.push(Number(numberValue.innerHTML));
-        displayTemoMemory() 
+        displayTemoMemory(269013399999)
     }
     else if (e.target.getAttribute('value') == 'MR') {
         if (memoryList.length == 0) {
@@ -64,18 +64,19 @@ mlineBtn.addEventListener('click', (e) => {
 
 
 
-export function displayTemoMemory() {
+export function displayTemoMemory(number) {
     console.log('navid')
     let memoryList = ' ';
-    for (let i = 0; memoryList.length; i++);
+    for (let i = 0; i < memoryList.length; i++);
     listMemory.innerHTML = `<p id="memoryLog" class="nohistory ">There's no history yet</p>
-    <div class ="memoryNumber">
-        <spn>mc </spn>
-        <spn>m+ </spn>
-        <spn>m- </spn>
-        </div>
+    <div class ="memoryNumber"> 
+        <div class = "NumberM"> ${number} </div>
+            <div class = "spnMemory">
+            <spn>mc </spn>
+            <spn>m+ </spn>
+            <spn>m- </spn>
+            </div>
+     </div>
     <button id="material-symbols-outlined" class="material-symbols-outlined"> delete</button>`
-
-
 
 }
