@@ -53,6 +53,7 @@ numbers.forEach((buttons) => {
       historyLog.push(boxResult.innerHTML);
       for (let i = 0; i < historyModule.HistoryLog.length; i++) {
         historyDiv.innerHTML += `<div class='historyTemp'> ${historyLog[i]} </div> <div class='historyNumber'> ${historyModule.HistoryLog[i]} </div>`;
+        
       }
       numberList = [];
       signList = [];
