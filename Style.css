@@ -379,7 +379,7 @@ body {
   align-items: center;
 }
 
-.memoryNumber spn {
+.memoryNumber span {
   font-size: 12px;
   padding: 12px;
 }
