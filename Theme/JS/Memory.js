@@ -70,28 +70,53 @@ mlineBtn.addEventListener('click', (e) => {
     console.log(memoryList);
 });
 
+window.mcHandler = function () {
+        memoryList = [];
+        list.innerHTML = '';
+        displayTempMemory()
+
+}
+
+window.mpHandler = function () {
+    
+        if (memoryList.length == 0) {
+            memoryList.push(Number(numberValue.innerHTML));
+        } else {
+            memoryList[memoryList.length - 1] += Number(numberValue.innerHTML);
+        }
+        displayTempMemory()
+    
+
+    console.log('M+')
+}
+
+window.mnHandler = function () {
+    
+        if (memoryList.length == 0) {
+            memoryList.push(Number(numberValue.innerHTML));
+        } else {
+            memoryList[memoryList.length - 1] -= Number(numberValue.innerHTML);
+        }
+        displayTempMemory()
+    
+
+    console.log('M-')
+}
 
 
-export function displayTempMemory() {
+function displayTempMemory() {
     listMemory.innerHTML = ' ';
     for (let i = 0; i < memoryList.length; i++) {
         listMemory.innerHTML +=
             ` <div class ="memoryNumber"> 
                 <div class = "NumberM"> ${memoryList[i]} </div>
                 <div class = "spnMemory">
-                <spn id="${i}" value="MC">mc </spn>
-                <spn id="${i}" value="M+">m+ </spn>
-                <spn id="${i}" value="M-">m- </spn>
+                <span  onclick="mcHandler()" id="${i}" value="MC">mc </span>
+                <span  onclick="mpHandler()"  id="${i}" value="M+">m+ </span>
+                <span  onclick="mnHandler()" id="${i}" value="M-">m- </span>
                 </div>
          </div>`
     }
-    debugger;
-    let memoryItemBtn = document.querySelectorAll('.spnMemory'); // spn mc m+ m-
-    memoryItemBtn.addEventListener('click', (e) => {
-        let index = Number(e.target.getAttribute('id'));
-        let operator = e.target.getAttribute('value');
-        if (operator == 'M+') {
-            memoryList[index] += Number(numberValue.innerHTML);
-        }
-    });
+
 }
+
