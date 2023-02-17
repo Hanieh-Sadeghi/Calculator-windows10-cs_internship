@@ -40,6 +40,18 @@ numbers.forEach((buttons) => {
       displayTempBox();
 
     } else if (value == '=') {
+      if (temp == '') {
+        if (signList.length > 0) {
+          historyModule.addHistory(result);
+          historyDiv.innerHTML = ' ';
+          historyLog.push(boxResult.innerHTML);
+          for (let i = 0; i < historyModule.HistoryLog.length; i++) {
+            historyDiv.innerHTML += `<div class='historyTemp'> ${historyLog[i]} </div> <div class='historyNumber'> ${historyModule.HistoryLog[i]} </div>`;
+
+          }
+          return;
+        }
+      }
       number2 = Number(temp);
       numberList.push(number2);
       signList.push(value);
@@ -53,7 +65,7 @@ numbers.forEach((buttons) => {
       historyLog.push(boxResult.innerHTML);
       for (let i = 0; i < historyModule.HistoryLog.length; i++) {
         historyDiv.innerHTML += `<div class='historyTemp'> ${historyLog[i]} </div> <div class='historyNumber'> ${historyModule.HistoryLog[i]} </div>`;
-        
+
       }
       numberList = [];
       signList = [];
@@ -70,11 +82,12 @@ numbers.forEach((buttons) => {
     } else if (value == '%') {
       let per = temp;
       let result = percentage(number1, per);
-      numberList.push(Number(per));
-      signList.push(value);
+      numberList.push(Number(result));
+      signList.push('');
+      temp = '';
       display(number1 - result);
       displayTempBox();
-
+      console.log(temp);
     } else if (value == 'backspace') {
       temp = temp.substring(0, temp.length - 1);
       if (temp == ' ') {
@@ -100,6 +113,7 @@ numbers.forEach((buttons) => {
       // clearTempBox();
     }
   });
+
 });
 
 history.addEventListener('click', () => {
@@ -135,7 +149,7 @@ function clearDisplay(type) {
   }
 }
 
-function clearTempBox() {
+export function clearTempBox() {
   boxResult.innerHTML = '';
 }
 
@@ -147,7 +161,7 @@ function display(numbers) {
 function displayTempBox() {
   let displayBox = ' ';
   for (let i = 0; i < numberList.length; i++) {
-    displayBox += `${numberList[i]}  ${signList[i]}`;
+    displayBox += `${numberList[i]}  ${signList[i]} `;
   }
   boxResult.innerHTML = displayBox;
 }
