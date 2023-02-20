@@ -37,37 +37,48 @@ numbers.forEach((buttons) => {
       temp = ' ';
       numberList.push(number1);
       signList.push(sign);
+      clearTempBox();
       displayTempBox();
 
     } else if (value == '=') {
       if (temp == '') {
-
-      }
-      number2 = Number(temp);
-      numberList.push(number2);
-      signList.push(value);
-      let result = calculate();
-      temp = result;
-      display('');
-      display(result);
-      displayTempBox();
-      historyModule.addHistory(result);
-      historyDiv.innerHTML = ' ';
-      historyLog.push(boxResult.innerHTML);
-      for (let i = 0; i < historyModule.HistoryLog.length; i++) {
-        historyDiv.innerHTML += `<div class='historyTemp'> ${historyLog[i]} </div> <div class='historyNumber'> ${historyModule.HistoryLog[i]} </div>`;
-
+        numberList = [];
+        signList = [];
+        temp = numberValue.innerHTML;
+        historyModule.addHistory(temp);
+        historyDiv.innerHTML = '';
+        historyLog.push(boxResult.innerHTML);
+        for (let i = 0; i < historyModule.HistoryLog.length; i++) {
+          historyDiv.innerHTML += `<div class='historyTemp'> ${historyLog[i]} </div> <div class='historyNumber'> ${historyModule.HistoryLog[i]} </div>`;
+        }
+        return;
+      } else {
+        number2 = Number(temp);
+        numberList.push(number2);
+        signList.push(value);
+        let result = calculate();
+        temp = result;
+        display('');
+        display(result);
+        displayTempBox();
+        historyModule.addHistory(result);
+        historyDiv.innerHTML = '';
+        historyLog.push(boxResult.innerHTML);
+        for (let i = 0; i < historyModule.HistoryLog.length; i++) {
+          historyDiv.innerHTML += `<div class='historyTemp'> ${historyLog[i]} </div> <div class='historyNumber'> ${historyModule.HistoryLog[i]} </div>`;
+        }
       }
       numberList = [];
       signList = [];
       historyModule.historyTempBox();
 
     } else if (topSigns.includes(value)) {
-      let currentValue = parseInt(numberValue.innerHTML);
+      let currentValue = parseFloat(numberValue.innerHTML);
+
       numberList.push(currentValue);
       signList.push(value);
       display(exponent_calculate(currentValue, value));
-      displayTempBox()
+      displayTempBox();
       historyModule.historyTempBox();
 
     } else if (value == '%') {
@@ -80,7 +91,7 @@ numbers.forEach((buttons) => {
       displayTempBox();
       console.log(temp);
     } else if (value == 'backspace') {
-      temp = temp.toString().substring(0, temp.length - 1);
+      temp = numberValue.innerHTML.toString().substring(0, numberValue.innerHTML.length - 1);
       if (temp == '') {
         display(0)
       } else {
@@ -91,6 +102,7 @@ numbers.forEach((buttons) => {
       display(numberValue.innerHTML);
     } else {
       if (value === '.' && temp.includes('.')) return;
+
       temp = temp + value;
       display(temp);
     }
@@ -152,7 +164,11 @@ function display(numbers) {
 function displayTempBox() {
   let displayBox = ' ';
   for (let i = 0; i < numberList.length; i++) {
-    displayBox += `${numberList[i]}  ${signList[i]} `;
+    if (numberList[i].toString().includes('.')) {
+      displayBox += `${numberList[i].toFixed(2)}  ${signList[i]} `;
+    } else {
+      displayBox += `${numberList[i]}  ${signList[i]} `;
+    }
   }
   boxResult.innerHTML = displayBox;
 }
@@ -195,7 +211,7 @@ function exponent_calculate(number, operator) {
       break;
     }
     case '1/': {
-      result = number = 1 / number;
+      result = 1 / number;
       break;
     }
   }
