@@ -321,7 +321,7 @@ body {
   color: var(--color-font);
 }
 
-.history-memory-active {
+.underline-active {
   border-bottom: 2px solid rgb(255, 106, 0);
 }
 
@@ -379,9 +379,11 @@ body {
   align-items: center;
 }
 
-.memoryNumber span {
+.memoryNumber button {
+  border:none;
   font-size: 12px;
   padding: 12px;
+  background-color: var(--color-container);
 }
 
 .NumberM {
