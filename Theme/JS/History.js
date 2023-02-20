@@ -13,7 +13,7 @@ export function historyTempBox() {
   }
 }
 
-//
+//-----Orng Memory && History -----
 let memoryOrng = document.getElementById('memory-p2');
 let historyOrng = document.getElementById('history-1');
 
@@ -27,3 +27,4 @@ historyOrng.addEventListener('click', function () {
   memoryOrng.classList.remove('underline-active');
   historyOrng.classList.add('underline-active');
 });
+
