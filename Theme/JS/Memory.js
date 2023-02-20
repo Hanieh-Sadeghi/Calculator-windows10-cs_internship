@@ -111,9 +111,9 @@ function displayTempMemory() {
             ` <div class ="memoryNumber"> 
                 <div class = "NumberM"> ${memoryList[i]} </div>
                 <div class = "spnMemory">
-                <span  onclick="mcHandler()" id="${i}" value="MC">mc </span>
-                <span  onclick="mpHandler()"  id="${i}" value="M+">m+ </span>
-                <span  onclick="mnHandler()" id="${i}" value="M-">m- </span>
+                <button  onclick="mcHandler()" id="${i}" value="MC">mc </button>
+                <button onclick="mpHandler()"  id="${i}" value="M+">m+ </button>
+                <button  onclick="mnHandler()" id="${i}" value="M-">m- </button>
                 </div>
          </div>`
     }
