@@ -6,7 +6,8 @@ const list = document.getElementById('history-msg'); //list history&&Memory
 // const memory = document.getElementById('memory-p2');//Memory
 // const eventHandler = {};
 const listMemory = document.getElementById('memoryLog'); //Memory
-
+let toggleMc = document.getElementById('toggle-mc');
+let toggleMr = document.getElementById('toggle-mr');
 
 
 let memoryList = [];
@@ -58,6 +59,10 @@ mlineBtn.addEventListener('click', (e) => {
     else if (e.target.getAttribute('value') == 'MS') {
         memoryList.push(Number(numberValue.innerHTML));
         displayTempMemory();
+        toggleMc.classList.remove('deactivate-toggle');
+        toggleMc.classList.add('activate');
+        toggleMr.classList.remove('deactivate-toggle');
+        toggleMr.classList.add('activate');
     }
     else if (e.target.getAttribute('value') == 'MR') {
         if (memoryList.length == 0) {
@@ -71,34 +76,34 @@ mlineBtn.addEventListener('click', (e) => {
 });
 
 window.mcHandler = function () {
-        memoryList = [];
-        list.innerHTML = '';
-        displayTempMemory()
+    memoryList = [];
+    list.innerHTML = '';
+    displayTempMemory()
 
 }
 
 window.mpHandler = function () {
-    
-        if (memoryList.length == 0) {
-            memoryList.push(Number(numberValue.innerHTML));
-        } else {
-            memoryList[memoryList.length - 1] += Number(numberValue.innerHTML);
-        }
-        displayTempMemory()
-    
+
+    if (memoryList.length == 0) {
+        memoryList.push(Number(numberValue.innerHTML));
+    } else {
+        memoryList[memoryList.length - 1] += Number(numberValue.innerHTML);
+    }
+    displayTempMemory()
+
 
     console.log('M+')
 }
 
 window.mnHandler = function () {
-    
-        if (memoryList.length == 0) {
-            memoryList.push(Number(numberValue.innerHTML));
-        } else {
-            memoryList[memoryList.length - 1] -= Number(numberValue.innerHTML);
-        }
-        displayTempMemory()
-    
+
+    if (memoryList.length == 0) {
+        memoryList.push(Number(numberValue.innerHTML));
+    } else {
+        memoryList[memoryList.length - 1] -= Number(numberValue.innerHTML);
+    }
+    displayTempMemory()
+
 
     console.log('M-')
 }
