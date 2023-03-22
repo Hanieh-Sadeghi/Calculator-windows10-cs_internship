@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: inherit;
+  color: inherit;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.container-original {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  height: 25px;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--color-container);
+}
+.header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header div.headerText {
+  font-size: 90%;
+  padding: 12px;
+  font-family: var(--font-family);
+}
+
+.window div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40px;
+  height: 38px;
+}
+.window .close:hover {
+  background: red;
+  color: white;
+}
+.window .max:hover,
+.window .min:hover {
+  background: #e3e3e3;
+}
+
+.containerleft {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background: #fff;
+}
+.containerleft .original-menu-bar {
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.containerleft .original-menu-bar div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: small;
+  flex-flow: row-reverse nowrap;
+}
+.containerleft .original-menu-bar div:hover {
+  background-color: #e3e3e3;
+}
+.containerleft .original-menu-bar i {
+  margin-left: auto;
+  height: 20px;
+  padding: auto;
+  font-size: large;
+  display: none;
+}
+.containerleft .original-menu-bar img {
+  width: 19px;
+  height: 19px;
+  margin-left: 1.15%;
+}
+
+.result {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 350%;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+.boxResult {
+  display: flex;
+  height: 30px;
+  padding: 10px;
+  font-size: 18px;
+  align-items: center;
+  padding-right: 20px;
+  justify-content: flex-end;
+  color: #888;
+}
+
+.mline {
+  height: 8%;
+  width: 55%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.mline div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+.mline div.activate:hover {
+  background: rgba(148, 148, 148, 0.5529411765);
+}
+.mline div.deactivate-toggle {
+  color: rgba(111, 111, 111, 0.618);
+}
+
+.mline {
+  height: 10%;
+  width: 55%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.mline div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+.mline div.activate:hover {
+  background: rgba(148, 148, 148, 0.5529411765);
+}
+
+.deactivate-toggle {
+  color: rgba(111, 111, 111, 0.618);
+}
+
+.m3 {
+  color: rgba(103, 103, 103, 0.378);
+  display: none !important;
+}
+
+.keyboardCalculator {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(5, auto);
+  height: 80%;
+  gap: 2.5px;
+}
+.keyboardCalculator div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+.keyboardCalculator div:hover {
+  background: rgba(148, 148, 148, 0.5529411765);
+}/*# sourceMappingURL=StyleSass.css.map */
