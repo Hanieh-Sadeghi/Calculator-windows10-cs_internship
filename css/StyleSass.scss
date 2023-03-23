@@ -1,5 +1,5 @@
-@import "./css/SASS/_config.sass";
-@import "./css/SASS/_media.sass";
+@import "SASS/_config.sass";
+@import "SASS/_media.sass";
 
 .container-original {
   width: 100%;
@@ -50,17 +50,11 @@
   // }
 }
 
-.main {
-  display: grid;
-  height: 96%;
-  grid-template-columns: 80% minmax(20%, 320px);
-}
-
 .containerleft {
   display: flex;
   height: 100%;
   flex-direction: column;
-  // background: $color-container;
+  flex: 5;
 
   .original-menu-bar {
     // height: 50px;
@@ -200,6 +194,7 @@
 
 .history {
   display: flex;
+  flex: 2;
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -307,4 +302,19 @@
 .caloperator3,
 .caloperator4 {
   background-color: #dbdbdbcc;
+}
+
+.main-container-calculator {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.main {
+  height: 100%;
 }
