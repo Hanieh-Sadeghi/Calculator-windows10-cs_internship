@@ -3,15 +3,74 @@
   margin: 0;
   box-sizing: border-box;
   overflow: hidden;
-  font-family: inherit;
-  color: inherit;
 }
 
 html,
 body {
+  height: max(100vh, 410px);
+  height: max(100svh, 410px);
+  width: max(100%, 250px);
+}
+
+.xhaide {
+  display: none !important;
+}
+.xhaide .keyboardCalculator {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2.5px;
+}
+.xhaide .caloperator1 {
+  order: -4;
+}
+.xhaide .caloperator2 {
+  order: -1;
+}
+.xhaide .caloperator3 {
+  order: -2;
+}
+.xhaide .caloperator4 {
+  order: -3;
+}
+
+.xhaide {
+  display: none !important;
+}
+
+.container-original {
+  grid-template-columns: 70% 30%;
+}
+
+.xhaide {
+  display: none !important;
+}
+
+.original-menu-bar i {
+  display: flex;
+  width: 40px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.m3 {
+  display: flex !important;
+}
+
+.main {
+  width: 145%;
+}
+
+.main img {
+  margin-left: 3%;
+}
+
+.mline {
+  height: 8%;
   width: 100%;
-  height: 100%;
-  background-color: #fff;
+}
+
+.material-symbols-outlined {
+  display: none !important;
 }
 
 .container-original {
@@ -24,17 +83,11 @@ body {
   height: 25px;
   flex-direction: row;
   justify-content: space-between;
-  background: var(--color-container);
 }
 .header div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.header div.headerText {
-  font-size: 90%;
-  padding: 12px;
-  font-family: var(--font-family);
 }
 
 .window div {
@@ -45,22 +98,22 @@ body {
   height: 38px;
 }
 .window .close:hover {
-  background: red;
-  color: white;
+  background: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
 }
-.window .max:hover,
-.window .min:hover {
-  background: #e3e3e3;
+
+.main {
+  display: grid;
+  height: 96%;
+  grid-template-columns: 80% minmax(20%, 320px);
 }
 
 .containerleft {
   display: flex;
   height: 100%;
   flex-direction: column;
-  background: #fff;
 }
 .containerleft .original-menu-bar {
-  height: 50px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -71,9 +124,6 @@ body {
   align-items: center;
   font-size: small;
   flex-flow: row-reverse nowrap;
-}
-.containerleft .original-menu-bar div:hover {
-  background-color: #e3e3e3;
 }
 .containerleft .original-menu-bar i {
   margin-left: auto;
@@ -110,25 +160,6 @@ body {
 }
 
 .mline {
-  height: 8%;
-  width: 55%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-}
-.mline div {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  border-radius: var(--radius);
-}
-.mline div.activate:hover {
-  background: rgba(148, 148, 148, 0.5529411765);
-}
-.mline div.deactivate-toggle {
-  color: rgba(111, 111, 111, 0.618);
-}
-
-.mline {
   height: 10%;
   width: 55%;
   display: grid;
@@ -138,7 +169,6 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  border-radius: var(--radius);
 }
 .mline div.activate:hover {
   background: rgba(148, 148, 148, 0.5529411765);
@@ -154,10 +184,12 @@ body {
 }
 
 .keyboardCalculator {
+  border: 1px solid red;
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-template-rows: repeat(5, auto);
-  gap: 2.5px;
+  grid-gap: 2px;
+  padding: 2px;
 }
 .keyboardCalculator div {
   display: flex;
@@ -203,22 +235,20 @@ body {
   font-size: x-large;
 }
 
-#history {
+.history {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
   background-color: rgba(210, 210, 210, 0.913);
 }
-
-#history-memory {
+.history #history-memory {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 10%;
 }
-
-#history-memory p {
+.history #history-memory p {
   justify-self: center;
   font-weight: bold;
   padding: 10px;
@@ -307,6 +337,9 @@ body {
   cursor: pointer;
 }
 
-.caloperator1, .caloperator2, .caloperator3, .caloperator4 {
+.caloperator1,
+.caloperator2,
+.caloperator3,
+.caloperator4 {
   background-color: rgba(219, 219, 219, 0.8);
 }/*# sourceMappingURL=StyleSass.css.map */

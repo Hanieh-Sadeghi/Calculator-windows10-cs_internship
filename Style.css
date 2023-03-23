@@ -116,7 +116,7 @@ body {
 }
 
 .main {
-  /* border: 1px solid red; */
+ 
   display: grid;
   height: 95%;
   grid-template-columns: 69% minmax(29%, 320px);
@@ -481,19 +481,19 @@ body {
 }
 
 .caloperator1 {
-  background-color: var(--color-keyboard);
+  background-color: #dbdbdbcc;
 }
 
 .caloperator2 {
-  background-color: var(--color-keyboard);
+  background-color: #dbdbdbcc;
 }
 
 .caloperator3 {
-  background-color: var(--color-keyboard);
+  background-color: #dbdbdbcc;
 }
 
 .caloperator4 {
-  background-color: var(--color-keyboard);
+  background-color: #dbdbdbcc;
 }
 
 ::-webkit-scrollbar {
