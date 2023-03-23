@@ -157,7 +157,6 @@ body {
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-template-rows: repeat(5, auto);
-  height: 80%;
   gap: 2.5px;
 }
 .keyboardCalculator div {
@@ -296,4 +295,18 @@ body {
   padding: 9px;
   font-weight: bold;
   justify-content: flex-end;
+}
+
+.material-symbols-outlined {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  bottom: 5px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.caloperator1, .caloperator2, .caloperator3, .caloperator4 {
+  background-color: rgba(219, 219, 219, 0.8);
 }/*# sourceMappingURL=StyleSass.css.map */
