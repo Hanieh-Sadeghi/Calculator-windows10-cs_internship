@@ -15,23 +15,6 @@ body {
 .xhaide {
   display: none !important;
 }
-.xhaide .keyboardCalculator {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 2.5px;
-}
-.xhaide .caloperator1 {
-  order: -4;
-}
-.xhaide .caloperator2 {
-  order: -1;
-}
-.xhaide .caloperator3 {
-  order: -2;
-}
-.xhaide .caloperator4 {
-  order: -3;
-}
 
 .xhaide {
   display: none !important;
@@ -54,10 +37,6 @@ body {
 
 .m3 {
   display: flex !important;
-}
-
-.main {
-  width: 145%;
 }
 
 .main img {
@@ -102,16 +81,11 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.main {
-  display: grid;
-  height: 96%;
-  grid-template-columns: 80% minmax(20%, 320px);
-}
-
 .containerleft {
   display: flex;
   height: 100%;
   flex-direction: column;
+  flex: 5;
 }
 .containerleft .original-menu-bar {
   display: flex;
@@ -237,6 +211,7 @@ body {
 
 .history {
   display: flex;
+  flex: 2;
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -342,4 +317,19 @@ body {
 .caloperator3,
 .caloperator4 {
   background-color: rgba(219, 219, 219, 0.8);
+}
+
+.main-container-calculator {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.main {
+  height: 100%;
 }/*# sourceMappingURL=StyleSass.css.map */
