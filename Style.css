@@ -1,23 +1,13 @@
 /* ----------------Theme---------------- */
 
 :root[data-theme="theme-container"] {
-  --color-container: rgba(210, 210, 210, 0.913);
-  --color-keyboard: #dbdbdbcc;
-  --clolor-namber: #eeececa4;
-  --color-hover: #9494948d;
-  --color-mc-mr: rgba(111, 111, 111, 0.618);
-  --font-family: "Noto Sans", sans-serif;
+  
+ 
+  
 }
 
 :root[data-theme="black"] {
-  --color-container: #121212;
-  --color-keyboard: #717171ac;
-  --clolor-namber: #303030f3;
-  --color-mc-mr: order;
-  --color-hover: #ff9900f9;
-  --color-font: rgba(255, 255, 255, 0.807);
-  --radius: 500px 100px;
-  --font-family: 'Solway', serif;
+ 
 }
 
 :root[data-theme="blue"] {
@@ -43,13 +33,7 @@
 }
 
 :root[data-theme="green"] {
-  --color-container: rgba(212, 251, 94, 0.938);
-  --color-keyboard: #79d10e;
-  --clolor-namber: #aae740e5;
-  --color-hover: #15520a9a;
-  --color-mc-mr: rgb(19, 73, 19);
-  --radius: 15px;
-  --font-family: ' serif';
+ 
 }
 
 * {
