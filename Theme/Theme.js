@@ -3,6 +3,7 @@ let  root =  document.querySelector ('html');
 let menu = document.querySelector('.burger');
 
 menu.addEventListener('click', function () {
+    console.log('burger');
     if ( root .getAttribute ('data-theme') === 'theme-container') {
         root .setAttribute ('data-theme' , 'black');
     } else if ( root .getAttribute('data-theme') === 'black'){
