@@ -1,4 +1,3 @@
-
 *
   padding: 0
   margin: 0
@@ -7,6 +6,26 @@
 
 html,
 body
-  height: max(100vh, 410px)
   height: max(100svh, 410px)
   width: max(100%, 250px)
+  // font-family: var(--font-family)
+  // font-size: 15px
+
+
+$scrollbar-width: 6px
+$scrollbar-border-radius: 50px
+
+::-webkit-scrollbar
+  width: $scrollbar-width
+
+::-webkit-scrollbar-track
+  background: var(--color-numbersKeybord)
+  border-radius: $scrollbar-border-radius
+
+::-webkit-scrollbar-thumb
+  width: 10px
+  background: var(--color-nambe)
+  border-radius: $scrollbar-border-radius
+
+::-webkit-scrollbar-thumb:hover
+  background: var(--)
