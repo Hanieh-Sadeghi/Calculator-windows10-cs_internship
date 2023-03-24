@@ -1,0 +1,60 @@
+@media screen and (max-width: 1024px) {
+    .xhaide {
+        display: none !important;
+    }
+
+    .keyboardCalculator {
+        grid-template-columns: repeat(4, auto) !important;
+        grid-template-rows: repeat(6, 1fr) !important;
+        gap: 2.5px;
+    }
+
+    .caloperator1 {
+        order: -4;
+    }
+
+    .caloperator2 {
+        order: -1;
+    }
+
+    .caloperator3 {
+        order: -2;
+    }
+
+    .caloperator4 {
+        order: -3;
+    }
+}
+
+@media screen and (max-width: 720px){
+    // .mline {
+    //     width: 100%!important;
+    // }
+}
+
+
+@media screen and (max-width: 500px) {
+    .original-menu-bar i {
+        display: flex;
+        // width: 40px;
+        // height: 30px;
+        font-size: 20px;
+    }
+
+    .m3 {
+        display: flex !important;
+    }
+
+    .history{
+        display: none!important;
+    }
+
+    .main img {
+        margin-left: 3%;
+    }
+
+    .mline {
+        width: 100% !important;
+    }
+
+}
