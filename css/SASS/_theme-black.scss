@@ -1,12 +1,13 @@
 $black : (
-    'color-container': #121212,
-    'color-keyboard': #717171ac,
-    'clolor-namber': #353535f3,
-    'color-mc-mr': order,
-    'color-hover': #ff9900f9,
-    'line-color': rgb(65, 115, 208),
-    'color-font': rgba(255, 255, 255, 0.807),
+    'color-container': #171313,
+    'color-keyboard':  #717171ac, //c ce + - * /
+    'color-numbersKeybord': #303030f3, //123456789
+    'color-Letters' : #d1d1d1,
+    'color-mc-mr': #c37c30,
+    'color-hover': rgb(255, 134, 35),
+    'line-color': rgb(255, 127, 23),
     'radius': 500px 100px,
-    'font-family':  serif,
-    'color-Letters' : #f4f4f4,
+    'font-family':  'Solway',
+    'coler-result' :#acacac, //0
+    'coler-mline' :#a0a0a0, //mc mr
 )
