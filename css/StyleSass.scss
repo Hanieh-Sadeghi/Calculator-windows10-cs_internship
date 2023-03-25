@@ -66,14 +66,16 @@ html {
     align-items: center;
 
     &.headerText {
+      color: var(--color-Letters);
       font-size: 15px;
       font-family: var(--font-family);
-      margin-left: 9px;
+      margin-left: 10px;
     }
   }
 }
 
 .window {
+  color: var(--color-Letters);
   div {
     display: flex;
     justify-content: space-around;
@@ -85,7 +87,7 @@ html {
   .close {
     &:hover {
       background: rgb(255, 0, 0);
-      color: rgb(255, 255, 255);
+      color: var(--color-Letters);
     }
   }
 
@@ -153,7 +155,7 @@ html {
   align-items: center;
   padding-right: 20px;
   justify-content: flex-end;
-  color: var(--color-mc-mr);
+  color: var(--color-Letters);
 }
 
 .mline {
@@ -166,12 +168,15 @@ html {
     justify-content: center;
     align-items: center;
     border-radius: var(--radius);
-   
 
     &.activate:hover {
       background: var(--color-hover);
     }
   }
+}
+
+.activate{
+  color: var(--coler-mline);
 }
 
 .deactivate-toggle {
@@ -273,7 +278,7 @@ html {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  color: var(--color-mc-mr);
+  color: var(--color-Letters);
   padding-right: 20px;
   font-size: 17px;
 }
@@ -312,6 +317,7 @@ html {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: var(--color-container);
 }
 
 .memoryNumber button {
@@ -319,6 +325,7 @@ html {
   font-size: 12px;
   padding: 12px;
   background-color: var(--color-container);
+  color: var(--color-Letters);
 }
 
 .NumberM {
@@ -337,6 +344,7 @@ html {
   border: none;
   background-color: inherit;
   cursor: pointer;
+  color: var(--color-Letters);
 }
 
 .caloperator1,
