@@ -24,33 +24,31 @@
     .caloperator4 {
         order: -3;
     }
-}
 
-@media screen and (max-width: 720px){
-    // .mline {
-    //     width: 100%!important;
-    // }
-}
-
-
-@media screen and (max-width: 500px) {
-    .original-menu-bar i {
-        display: flex;
-        // width: 40px;
-        // height: 30px;
-        font-size: 20px;
+    .mline {
+        width: 70% !important;
     }
 
+    .m3 {
+        color: rgba(103, 103, 103, 0.378);
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .m3 {
+        color: rgba(103, 103, 103, 0.378);
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
     .m3 {
         display: flex !important;
     }
 
-    .history{
-        display: none!important;
-    }
-
-    .main img {
-        margin-left: 3%;
+    .history {
+        display: none !important;
     }
 
     .mline {
