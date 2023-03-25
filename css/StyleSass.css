@@ -78,68 +78,70 @@ body {
 }
 html {
   /* Define the CSS variables using the container map */
-  --font-family: Noto Sans;
-  --font-size: 40px;
-  --color-container: rgba(210, 210, 210, 0.913);
-  --color-mc-mr: rgba(111, 111, 111, 0.618);
-  --color-keyboard: rgba(219, 219, 219, 0.8);
-  --color-numbersKeybord: #ffffff;
+  --color-container: rgb(198, 198, 198);
+  --color-keyboard: rgba(206, 206, 206, 0.8196078431);
+  --color-numbersKeybord: rgba(220, 220, 220, 0.8941176471);
+  --color-mc-mr: rgba(111, 111, 111, 0.747);
   --clolor-namber: #000000;
-  --color-hover: rgba(148, 148, 148, 0.5529411765);
+  --font-family: Noto Sans;
+  --color-Letters: #000000;
+  --font-size: 40px;
+  --radius: 5px;
+  --color-hover: rgba(148, 148, 148, 0.4901960784);
   --line-color: rgb(255, 128, 0);
-  --color-Letters: rgba(0, 0, 0, 0.6431372549);
 }
 
 /* Define each theme using the corresponding map */
 [data-theme=black] {
-  --color-container: #121212;
+  --color-container: #171313;
   --color-keyboard: rgba(113, 113, 113, 0.6745098039);
-  --clolor-namber: rgba(53, 53, 53, 0.9529411765);
-  --color-mc-mr: order;
-  --color-hover: rgba(255, 153, 0, 0.9764705882);
-  --line-color: rgb(65, 115, 208);
-  --color-font: rgba(255, 255, 255, 0.807);
+  --color-numbersKeybord: rgba(48, 48, 48, 0.9529411765);
+  --color-Letters: #d1d1d1;
+  --color-mc-mr: #c37c30;
+  --color-hover: rgb(255, 134, 35);
+  --line-color: rgb(255, 127, 23);
   --radius: 500px 100px;
-  --font-family: serif;
-  --color-Letters: #f4f4f4;
+  --font-family: Solway;
+  --coler-result: #acacac;
+  --coler-mline: #a0a0a0;
 }
 
 [data-theme=blue] {
-  --line-color: rgb(255, 255, 255);
   --color-container: #bcdefb;
   --color-keyboard: #4fb3f6;
-  --clolor-namber: rgba(111, 208, 249, 0.8980392157);
-  --color-hover: #0866ea;
-  --color-mc-mr: #004f79;
-  --color-font: #111525;
-  --radius: 40px 0;
-  --font-family: Lucida Sans;
-  --color-Letters: #f4f4f4;
+  --color-numbersKeybord: rgba(111, 208, 249, 0.8980392157);
+  --color-Letters: #002a4b;
+  --line-color: rgb(4, 84, 135);
+  --color-hover: #418ac6;
+  --color-mc-mr: #014469;
+  --radius: 50px 0;
+  --font-family: Unicode;
 }
 
 [data-theme=purple] {
-  --line-color: rgb(255, 255, 255);
-  --color-container: #c09afb;
-  --color-keyboard: #8a47fc;
-  --clolor-namber: rgba(10, 3, 30, 0.8470588235);
-  --color-hover: rgba(73, 33, 128, 0.7058823529);
+  --color-container: #bd95ff;
+  --color-keyboard: #8254f7;
+  --color-numbersKeybord: rgba(154, 121, 253, 0.8470588235);
+  --line-color: #333456;
+  --color-hover: rgba(81, 28, 180, 0.7607843137);
   --color-mc-mr: rgb(68, 59, 80);
   --color-font: rgb(46, 30, 70);
   --radius: 1px 600px;
   --font-family: sans-serif;
-  --color-Letters: #f4f4f4;
+  --color-Letters: #060930;
 }
 
 [data-theme=green] {
   --line-color: rgb(255, 255, 255);
   --color-container: rgba(212, 251, 94, 0.938);
   --color-keyboard: #79d10e;
+  --color-numbersKeybord: rgba(154, 121, 253, 0.8470588235);
   --clolor-namber: #294000;
   --color-hover: rgba(21, 82, 10, 0.6039215686);
   --color-mc-mr: rgb(19, 73, 19);
   --radius: 15px;
   --font-family:  monospace;
-  --color-Letters: #f4f4f4;
+  --color-Letters: #e51515;
 }
 
 .container-original {
@@ -160,10 +162,15 @@ html {
   align-items: center;
 }
 .header div.headerText {
-  font-size: 16px;
+  color: var(--color-Letters);
+  font-size: 15px;
   font-family: var(--font-family);
+  margin-left: 10px;
 }
 
+.window {
+  color: var(--color-Letters);
+}
 .window div {
   display: flex;
   justify-content: space-around;
@@ -173,7 +180,7 @@ html {
 }
 .window .close:hover {
   background: rgb(255, 0, 0);
-  color: rgb(255, 255, 255);
+  color: var(--color-Letters);
 }
 .window .max:hover,
 .window .min:hover {
@@ -181,66 +188,60 @@ html {
 }
 
 .containerleft {
-  border: 3px solid rgb(0, 255, 191);
   display: grid;
   height: 100%;
   grid-template-rows: 50px 50px 0.2fr 0.1fr 1fr;
   flex: 6.5;
 }
 .containerleft .original-menu-bar {
-  border: 1px solid rgb(0, 255, 30);
   display: flex;
   justify-content: start;
   align-items: center;
+  color: var(--color-Letters);
+  font-size: 15.25px;
 }
 .containerleft .original-menu-bar div {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: small;
   flex-flow: row-reverse nowrap;
-  margin-left: 1%;
-  margin-right: 1.5%;
+  margin-right: 0.1%;
 }
 .containerleft .original-menu-bar div:hover {
-  background-color: var(--font-family);
+  background-color: var(--color-hover);
+  border-radius: var(--radius);
 }
-.containerleft .original-menu-bar i {
-  margin-left: auto;
-  height: 20px;
-  padding: auto;
-  font-size: large;
-  display: none;
+.containerleft .original-menu-bar .burger {
+  padding: 9px;
+  margin-left: 0.25%;
 }
 .containerleft .original-menu-bar img {
-  width: 19px;
-  height: 19px;
-  margin-left: 1.15%;
+  width: 23px;
+  height: 23px;
+  margin-left: 1.55%;
 }
 
 .result {
-  border: 1px solid rgb(0, 38, 255);
   display: flex;
   align-items: center;
   justify-content: flex-end;
   font-size: 380%;
   font-weight: 650;
   padding-right: 30px;
+  color: var(--coler-result);
 }
 
 .boxResult {
-  border: 1px solid rgb(255, 191, 0);
   display: flex;
   padding: 10px;
   font-size: 18px;
   align-items: center;
   padding-right: 20px;
   justify-content: flex-end;
-  color: #888;
+  color: var(--color-Letters);
 }
 
 .mline {
-  border: 1px solid rgb(208, 0, 255);
   width: 60%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -255,8 +256,12 @@ html {
   background: var(--color-hover);
 }
 
+.activate {
+  color: var(--coler-mline);
+}
+
 .deactivate-toggle {
-  color: rgba(111, 111, 111, 0.618);
+  color: var(--color-mc-mr);
 }
 
 .keyboardCalculator {
@@ -265,20 +270,20 @@ html {
   grid-template-rows: repeat(5, 1fr);
   margin-bottom: 25px;
   grid-gap: 2px;
-  color: var(--clolor-namber);
+  color: var(--color-Letters);
 }
 .keyboardCalculator div {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: x-large;
+  border-radius: var(--radius);
 }
 .keyboardCalculator div:hover {
   background: var(--color-hover);
 }
 
 #containerMemory {
-  border: 10px solid red;
   display: flex;
   visibility: hidden;
   position: absolute;
@@ -317,7 +322,8 @@ html {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: var(--color-container);
+  border: 1px solid red;
+  color: var(--color-Letters);
 }
 .history #history-memory {
   display: flex;
@@ -348,7 +354,7 @@ html {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  color: rgb(136, 136, 136);
+  color: var(--color-Letters);
   padding-right: 20px;
   font-size: 17px;
 }
@@ -387,6 +393,7 @@ html {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: var(--color-container);
 }
 
 .memoryNumber button {
@@ -394,6 +401,7 @@ html {
   font-size: 12px;
   padding: 12px;
   background-color: var(--color-container);
+  color: var(--color-Letters);
 }
 
 .NumberM {
@@ -412,6 +420,7 @@ html {
   border: none;
   background-color: inherit;
   cursor: pointer;
+  color: var(--color-Letters);
 }
 
 .caloperator1,
@@ -422,7 +431,6 @@ html {
 }
 
 .main-container-calculator {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -430,7 +438,7 @@ html {
   height: 100%;
   width: 100%;
   background-color: var(--color-container);
-  border-radius: 10px;
+  font-family: var(--font-family);
 }
 
 .main {
