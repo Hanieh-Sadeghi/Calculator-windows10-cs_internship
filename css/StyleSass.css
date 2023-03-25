@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +10,7 @@ html,
 body {
   height: max(100svh, 410px);
   width: max(100%, 250px);
+  font-family: var(--font-family);
 }
 
 ::-webkit-scrollbar {
@@ -83,9 +85,8 @@ html {
   --color-numbersKeybord: rgba(220, 220, 220, 0.8941176471);
   --color-mc-mr: rgba(111, 111, 111, 0.747);
   --clolor-namber: #000000;
-  --font-family: Noto Sans;
+  --font-family: sans-serif;
   --color-Letters: #000000;
-  --font-size: 40px;
   --radius: 5px;
   --color-hover: rgba(148, 148, 148, 0.4901960784);
   --line-color: rgb(255, 128, 0);
@@ -115,7 +116,7 @@ html {
   --color-hover: #418ac6;
   --color-mc-mr: #014469;
   --radius: 50px 0;
-  --font-family: Unicode;
+  --font-family: Merriweather;
 }
 
 [data-theme=purple] {
@@ -127,21 +128,20 @@ html {
   --color-mc-mr: rgb(68, 59, 80);
   --color-font: rgb(46, 30, 70);
   --radius: 1px 600px;
-  --font-family: sans-serif;
+  --font-family: Roboto Slab;
   --color-Letters: #060930;
 }
 
 [data-theme=green] {
-  --line-color: rgb(255, 255, 255);
-  --color-container: rgba(212, 251, 94, 0.938);
-  --color-keyboard: #79d10e;
-  --color-numbersKeybord: rgba(154, 121, 253, 0.8470588235);
-  --clolor-namber: #294000;
-  --color-hover: rgba(21, 82, 10, 0.6039215686);
-  --color-mc-mr: rgb(19, 73, 19);
+  --line-color: #495579;
+  --color-container: #BBD6B8;
+  --color-keyboard: #94AF9F;
+  --color-numbersKeybord: #AEC2B6;
+  --color-hover: #DBE4C6;
+  --color-mc-mr: #539165;
   --radius: 15px;
   --font-family:  monospace;
-  --color-Letters: #e51515;
+  --color-Letters: #003e20;
 }
 
 .container-original {
