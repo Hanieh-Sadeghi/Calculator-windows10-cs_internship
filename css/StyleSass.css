@@ -18,18 +18,18 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-numbersKeybord);
+  background: var(--color-mc-mr);
   border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb {
   width: 10px;
-  background: var(--color-nambe);
+  background: var(--color-hover);
   border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--);
+  background: var(--color-keyboard);
 }
 
 @media screen and (max-width: 1024px) {
@@ -88,7 +88,7 @@ html {
   --font-family: sans-serif;
   --color-Letters: #000000;
   --radius: 5px;
-  --color-hover: rgba(148, 148, 148, 0.4901960784);
+  --color-hover: rgba(159, 158, 158, 0.4901960784);
   --line-color: rgb(255, 128, 0);
 }
 
