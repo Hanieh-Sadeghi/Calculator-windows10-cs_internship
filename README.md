@@ -14,6 +14,6 @@ Create it unresponsive but resizeable (a resizable view is a view that can toler
 <h4>mplement your calculator considering these features:
 Make it responsive just like the Windows 10 calculator.
 Get more information about responsive rules, sizes, and more by following the provided pictures in images and this video</h4>
+<img src="Picture/Step 2/Step 2 calculator photo.png" alt="Calculator Step 2" />
+<img src="Picture/Step 2/Step 2 calculator photo .png" alt="Calculator Step 2" />
 <img src="Picture/Step 2/Step 2  calculator photo.png" alt="Calculator Step 2" />
-                    <img src="Picture/Step 2/Step 2 calculator photo .png" alt="Calculator Step 2" />
-                    <img src="Picture/Step 2/Step 2 calculator photo.png" alt="Calculator Step 2" />
