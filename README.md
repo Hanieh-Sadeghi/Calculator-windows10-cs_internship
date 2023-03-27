@@ -7,7 +7,7 @@
 <h3>Step 1 was asked of us:</h3>
 <h4>Implement a calculator layout exactly like the Windows 10 calculator in maximum size (Standard mode):
 Create it unresponsive but resizeable (a resizable view is a view that can tolerate resizing from desktop view to tablet view)</h4>👇🏼👇🏼
- <img src="Picture/Step 1/Step 1 calculator photo .png" width="200" height="150 />
+ <img src="Picture/Step 1/Step 1 calculator photo .png" width="200" height="150" />
 
 # Step 2 👇🏼
 <h3>Step 2 was asked of us:</h3>
