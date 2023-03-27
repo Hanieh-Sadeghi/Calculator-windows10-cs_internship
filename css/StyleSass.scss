@@ -7,6 +7,9 @@
 @import "SASS/theme-green";
 @import "SASS/theme-blue";
 
+::selection{
+  background: transparent;
+}
 html {
 
   /* Define the CSS variables using the container map */
@@ -129,6 +132,7 @@ html {
     .burger {
       padding: 9px;
       margin-left: 0.25%;
+      cursor: pointer;
     }
 
     img {
@@ -163,7 +167,8 @@ html {
   width: 60%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-
+  cursor: pointer;
+  
   div {
     display: grid;
     justify-content: center;
@@ -190,6 +195,7 @@ html {
   grid-template-rows: repeat(5, 1fr);
   margin-bottom: 25px;
   grid-gap: 2px;
+  cursor: pointer;
   color: var(--color-Letters);
 
   div {
