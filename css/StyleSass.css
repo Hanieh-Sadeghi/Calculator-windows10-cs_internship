@@ -78,6 +78,10 @@ body {
     width: 100% !important;
   }
 }
+::selection {
+  background: transparent;
+}
+
 html {
   /* Define the CSS variables using the container map */
   --color-container: rgb(198, 198, 198);
@@ -214,6 +218,7 @@ html {
 .containerleft .original-menu-bar .burger {
   padding: 9px;
   margin-left: 0.25%;
+  cursor: pointer;
 }
 .containerleft .original-menu-bar img {
   width: 23px;
@@ -245,6 +250,7 @@ html {
   width: 60%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  cursor: pointer;
 }
 .mline div {
   display: grid;
@@ -270,6 +276,7 @@ html {
   grid-template-rows: repeat(5, 1fr);
   margin-bottom: 25px;
   grid-gap: 2px;
+  cursor: pointer;
   color: var(--color-Letters);
 }
 .keyboardCalculator div {
