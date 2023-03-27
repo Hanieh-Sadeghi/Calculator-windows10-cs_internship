@@ -17,7 +17,7 @@ Get more information about responsive rules, sizes, and more by following the pr
 <div style="display:flex;">
     <img src="Picture/Step 2/Step 2 calculator photo .png" width="200" height="150"/>
     <img src="Picture/Step 2/Step 2 calculator photo.png" alt="Calculator Step 2" width="200" height="150"/>
-    <img src="Picture/Step 2/Step 2  calculator photo.png" alt="Calculator Step 2" width="200" height="150"/>
+    <img src="Picture/Step 2/Step 2  calculator photo.png" alt="Calculator Step 2" width="100" height="150"/>
   </div>
 
 # Calculator Step  3 👇🏼
