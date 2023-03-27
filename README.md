@@ -17,3 +17,7 @@ Get more information about responsive rules, sizes, and more by following the pr
 <img src="Picture/Step 2/Step 2 calculator photo .png" alt="Calculator Step 2" />
 <img src="Picture/Step 2/Step 2 calculator photo.png" alt="Calculator Step 2" />
 <img src="Picture/Step 2/Step 2  calculator photo.png" alt="Calculator Step 2" />
+
+# Calculator Step  👇🏼
+
+<img src="/Picture/Step 3/Step 3 Theme .MP4">
