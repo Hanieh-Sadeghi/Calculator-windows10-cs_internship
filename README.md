@@ -15,11 +15,10 @@ Create it unresponsive but resizeable (a resizable view is a view that can toler
 Make it responsive just like the Windows 10 calculator.
 Get more information about responsive rules, sizes, and more by following the provided pictures in images and this video</h4>
 <div style="display:flex;">
-  <img src="Picture/Step 2/Step 2 calculator photo.png" alt="Calculator Step 2" width="200" height="150"/>
-  <img src="Picture/Step 2/Step 2 calculator photo.png" alt="Calculator Step 2" width="200" height="150"/>
-  <img src="Picture/Step 2/Step 2 calculator photo.png" alt="Calculator Step 2" width="200" height="150"/>
-</div>
-
+    <img src="Picture/Step 2/Step 2 calculator photo .png" width="200" height="150"/>
+    <img src="Picture/Step 2/Step 2 calculator photo.png" alt="Calculator Step 2" width="200" height="150"/>
+    <img src="Picture/Step 2/Step 2  calculator photo.png" alt="Calculator Step 2" width="200" height="150"/>
+  </div>
 
 # Calculator Step  3 👇🏼
 <h3>Step 2 was asked of us:</h3>
