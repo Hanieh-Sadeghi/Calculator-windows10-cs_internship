@@ -22,5 +22,5 @@ Get more information about responsive rules, sizes, and more by following the pr
 <h3>Step 2 was asked of us:</h3>
 <video width="320" height="240" controls>
   <source src="Picture/Step 3/example.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+  
 </video>
