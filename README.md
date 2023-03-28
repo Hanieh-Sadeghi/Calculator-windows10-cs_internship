@@ -4,10 +4,20 @@
 </h2>
 
 # Windows 10 Calculator
-# Step 1 👇🏼
-<h3>Step 1 was asked of us:</h3>
-<h4>Implement a calculator layout exactly like the Windows 10 calculator in maximum size (Standard mode):
-Create it unresponsive but resizeable (a resizable view is a view that can tolerate resizing from desktop view to tablet view)</h4>
+<p>
+    This is a project for the CS_Intership course, where we will implement a
+    calculator with various functionalities. The goal of this project is to
+    create a calculator that looks and behaves similarly to the Windows 10
+    calculator while also being responsive and themeable.
+</p>
+
+<h3>Step 1: Implement a Calculator Layout</h3>
+<p>
+    In this step, we will implement a calculator layout that resembles the
+    Windows 10 calculator in maximum size (Standard mode). The calculator will
+    be unresponsive but resizable, which means that it can tolerate resizing
+    from desktop view to tablet view.
+</p>
  <img src="Picture/Step 1/Step 1 calculator photo .png" width="200" height="150" />
 
 # Step 2 👇🏼
