@@ -21,21 +21,25 @@
  <img src="Picture/Step 1/Step 1 calculator photo .png" width="200" height="150" />
 
 # Step 2 👇🏼
-<h3>Step 2 was asked of us:</h3>
-<h4>Implement your calculator considering these features:
-Make it responsive just like the Windows 10 calculator.
-Get more information about responsive rules, sizes, and more by following the provided pictures in images and this video</h4>
+<h3>Step 2: Implement a Responsive Calculator</h3>
+<p>
+    In this step, we will make the calculator responsive just like the Windows
+    10 calculator. This means that the calculator will be able to adjust its
+    layout based on the screen size of the device.
+</p>
 <div style="display:flex;">
     <img src="Picture/Step 2/Step 2 calculator photo .png" width="200" height="150"/>
     <img src="Picture/Step 2/Step 2 calculator photo.png" alt="Calculator Step 2" width="200" height="150"/>
     <img src="Picture/Step 2/Step 2  calculator photo.png" alt="Calculator Step 2" width="100" height="150"/>
   </div>
 
-# Step  3 👇🏼
-<h3>Step 3 was asked of us:</h3>
-<h4>Enhance the Standard Calculator (from the previous step):
-Use JS to add calculation functionalities.
-Implement it without using any library.</h4>
+<h3>Step 3: Make the Calculator Functional</h3>
+<p>
+    In this step, we will add the ability to theme the calculator. We will add a
+    green and blue theme, as well as a dark mode theme. Additionally, we will
+    enhance the standard calculator by adding calculation functionalities using
+    JavaScript.
+</p>
 <div style="display:flex;">
   <img src="/Picture/Step 3/FullScreen Step 3.png" width="200" height="150" >
   <img src="/Picture/Step 3/Histoy Step 3.png" width="200" height="150">
@@ -43,9 +47,11 @@ Implement it without using any library.</h4>
   <img src="/Picture/Step 3/screen 500 px.png" width="100" height="150" >
 </div>
 
-# Step  4 👇🏼
-<h3>Step 4 was asked of us:</h3>
-<h4>Refactor style and themeable of the calculator (from the previous step) with SCSS/SASS.</h4>
+<h4>A: Themeable Calculator</h4>
+<p>
+    In this substep, we will make the calculator themeable by adding a green and
+    blue theme and a dark mode theme.
+</p>
 <div style="display:flex;">
     <img src="/Picture/Step 4/black.png" width="100" height="150" >
     <img src="/Picture/Step 4/blue.png" width="100" height="150">
