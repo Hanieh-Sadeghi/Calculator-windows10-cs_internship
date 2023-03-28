@@ -22,10 +22,10 @@ Get more information about responsive rules, sizes, and more by following the pr
 
 # Calculator Step  3 👇🏼
 <h3>Step 2 was asked of us:</h3>
-<video width="320" height="240" controls>
-    <source src="Picture/Step 3/Step 3 Theme .MP4" type="video/mp4">
-    <img src="/Picture/Step 3/FullScreen Step 3.png" ></img>
-    <img src="/Picture/Step 3/Histoy Step 3.png" ></img>
-    <img src="/Picture/Step 3/memory Step 3.png" ></img>
-    <img src="/Picture/Step 3/screen 500 px.png" ></img>
-  </video>
+<div align="center">
+  <img src="/Picture/Step 3/FullScreen Step 3.png" width="200" height="200" hspace="20">
+  <img src="/Picture/Step 3/Histoy Step 3.png" width="200" height="200" hspace="20">
+  <img src="/Picture/Step 3/memory Step 3.png" width="200" height="200" hspace="20">
+  <img src="/Picture/Step 3/screen 500 px.png" width="200" height="200" hspace="20">
+</div>
+
