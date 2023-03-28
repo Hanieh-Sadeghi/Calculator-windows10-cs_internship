@@ -23,7 +23,7 @@ Get more information about responsive rules, sizes, and more by following the pr
 # Calculator Step  3 👇🏼
 <h3>Step 2 was asked of us:</h3>
 <div align="center">
-  <img src="/Picture/Step 3/FullScreen Step 3.png" width="200" height="200" hspace="20">
+  <img src="/Picture/Step 3/FullScreen Step 3.png" width="100" height="200" hspace="20">
   <img src="/Picture/Step 3/Histoy Step 3.png" width="200" height="200" hspace="20">
   <img src="/Picture/Step 3/memory Step 3.png" width="200" height="200" hspace="20">
   <img src="/Picture/Step 3/screen 500 px.png" width="100" height="200" hspace="20">
