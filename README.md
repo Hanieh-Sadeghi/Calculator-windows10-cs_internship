@@ -25,7 +25,7 @@ Get more information about responsive rules, sizes, and more by following the pr
 <h4>Enhance the Standard Calculator (from the previous step):
 Use JS to add calculation functionalities.
 Implement it without using any library.</h4>
-<div align="center">
+<div style="display:flex;">
   <img src="/Picture/Step 3/FullScreen Step 3.png" width="200" height="200" hspace="20">
   <img src="/Picture/Step 3/Histoy Step 3.png" width="200" height="200" hspace="20">
   <img src="/Picture/Step 3/memory Step 3.png" width="200" height="200" hspace="20">
