@@ -22,6 +22,9 @@ Get more information about responsive rules, sizes, and more by following the pr
 
 # Calculator Step  3 👇🏼
 <h3>Step 2 was asked of us:</h3>
+<h4>Enhance the Standard Calculator (from the previous step):
+Use JS to add calculation functionalities.
+Implement it without using any library.</h4>
 <div align="center">
   <img src="/Picture/Step 3/FullScreen Step 3.png" width="200" height="200" hspace="20">
   <img src="/Picture/Step 3/Histoy Step 3.png" width="200" height="200" hspace="20">
