@@ -59,3 +59,15 @@
     <img src="/Picture/Step 4/purple.png" width="100" height="150" >
     <img src="/Picture/Step 4/White.png" width="100" height="150" >
   </div>
+<h2>Conclusion</h2>
+<p>
+    In conclusion, this project is an excellent opportunity to develop practical
+    skills in web development using HTML, CSS, and JavaScript, as well as
+    SCSS/SASS. By following the four steps outlined in this README, we will
+    create a functional calculator that resembles the Windows 10 calculator in
+    appearance and functionality. Through this project, we will learn how to
+    create a responsive and themeable calculator and enhance its functionality
+    using JavaScript. Overall, this project will help us gain valuable
+    experience in web development and provide a foundation for more advanced web
+    development projects.
+</p>
