@@ -20,7 +20,6 @@
 </p>
  <img src="Picture/Step 1/Step 1 calculator photo .png" width="200" height="150" />
 
-# Step 2 👇🏼
 <h3>Step 2: Implement a Responsive Calculator</h3>
 <p>
     In this step, we will make the calculator responsive just like the Windows
@@ -33,7 +32,7 @@
     <img src="Picture/Step 2/Step 2  calculator photo.png" alt="Calculator Step 2" width="100" height="150"/>
   </div>
 
-<h3>Step 3: Make the Calculator Functional</h3>
+<h4>Step 3: Make the Calculator Functional</h4>
 <p>
     In this step, we will add the ability to theme the calculator. We will add a
     green and blue theme, as well as a dark mode theme. Additionally, we will
