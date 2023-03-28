@@ -26,8 +26,8 @@ Get more information about responsive rules, sizes, and more by following the pr
 Use JS to add calculation functionalities.
 Implement it without using any library.</h4>
 <div style="display:flex;">
-  <img src="/Picture/Step 3/FullScreen Step 3.png" width="200" height="200" >
-  <img src="/Picture/Step 3/Histoy Step 3.png" width="200" height="200" >
+  <img src="/Picture/Step 3/FullScreen Step 3.png" width="200" height="150"" >
+  <img src="/Picture/Step 3/Histoy Step 3.png" width="200" height="150">
   <img src="/Picture/Step 3/memory Step 3.png" width="200" height="200" >
   <img src="/Picture/Step 3/screen 500 px.png" width="100" height="200" >
 </div>
