@@ -1,7 +1,7 @@
-<h2>
+<!-- <h2>
     Hello there
     <img src="https://media.tenor.com/3zYTjSu1N9AAAAAi/kenobi-pog.gif" width="30px" height="30px" />
-</h2>
+</h2> -->
 
 # Windows 10 Calculator
 <p>
