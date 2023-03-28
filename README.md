@@ -3,7 +3,7 @@
     <img src="https://media.tenor.com/3zYTjSu1N9AAAAAi/kenobi-pog.gif" width="30px" height="30px" />
 </h2>
 
-# Calculator
+# Windows 10 Calculator
 # Step 1 👇🏼
 <h3>Step 1 was asked of us:</h3>
 <h4>Implement a calculator layout exactly like the Windows 10 calculator in maximum size (Standard mode):
