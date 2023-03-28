@@ -37,8 +37,8 @@ Implement it without using any library.</h4>
 <h3>Step 4 was asked of us:</h3>
 <h4>Refactor style and themeable of the calculator (from the previous step) with SCSS/SASS.</h4>
 <div style="display:flex;">
-    <img src="/Picture/Step 4/black.png" width="200" height="150" >
-    <img src="/Picture/Step 4/blue.png" width="200" height="150">
+    <img src="/Picture/Step 4/black.png" width="100" height="150" >
+    <img src="/Picture/Step 4/blue.png" width="100" height="150">
     <img src="/Picture/Step 4/green.png" width="200" height="150" >
     <img src="/Picture/Step 4/purple.png" width="100" height="150" >
     <img src="/Picture/Step 4/White.png" width="100" height="150" >
